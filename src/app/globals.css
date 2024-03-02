@@ -1,0 +1,39 @@
+body {
+  font-family: "Open Sans", sans-serif !important;
+  background: #0c0b09 !important;
+  color: #ffffff;
+}
+
+a {
+  color: #cda45e;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #d9ba85;
+  text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Section */
+
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background: #1a1814;
+}

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-sync-scripts */
 // import Icons
 import "bootstrap-icons/font/bootstrap-icons.css";
 
@@ -12,6 +13,7 @@ import type { Metadata } from "next";
 import { Playfair_Display } from "next/font/google";
 import "./globals.css";
 import React from "react";
+import TopBar from "./components/TopBar";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -33,7 +35,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={playfair.className}>{children}</body>
+      <body className={playfair.className}>
+        <TopBar />
+        {children}
+      </body>
       <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
