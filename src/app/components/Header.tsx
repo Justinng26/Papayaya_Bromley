@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import "./header.css";
+import "../styles/header.css";
+import AppBtn from "./AppBtn";
 
 export default function Header() {
   const [scroll, setScroll] = useState(0);
@@ -27,7 +28,9 @@ export default function Header() {
         </h1>
         {/* insert image logo */}
         {/* <a href="/"><img src="assets/img/logo.png" alt="" className="img-fluid" />
-                {/* </a> */}
+        {/* </a> */}
+
+        <AppBtn name="book a table" />
       </div>
     </header>
   );

@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import "./topBar.css";
+import "../styles/topbar.css";
 
 export default function TopBar() {
   const [scroll, setScroll] = useState(0);
