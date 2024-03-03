@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import "../styles/header.css";
 import AppBtn from "./AppBtn";
+import NavBar from "./NavBar";
 
 export default function Header() {
   const [scroll, setScroll] = useState(0);
@@ -29,7 +30,7 @@ export default function Header() {
         {/* insert image logo */}
         {/* <a href="/"><img src="assets/img/logo.png" alt="" className="img-fluid" />
         {/* </a> */}
-
+        <NavBar />
         <AppBtn name="book a table" />
       </div>
     </header>
