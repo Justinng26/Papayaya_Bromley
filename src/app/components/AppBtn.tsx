@@ -5,7 +5,7 @@ export default function AppBtn({ name }: { name: string }) {
   return (
     <a
       className="app-btn  scrollto d-none d-lg-flex"
-      onClick={() => handleScrollTo("book-a-table")}
+      onClick={() => handleScrollTo("order online")}
     >
       {name}
     </a>

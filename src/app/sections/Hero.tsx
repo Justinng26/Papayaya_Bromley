@@ -24,11 +24,11 @@ export default function Hero() {
             <h1>
               Welcome to <span>Papayaya</span>
             </h1>
-            <h2>Delivering great food for more than 5 years!</h2>
+            <h2>A truly authentic street food experience!</h2>
           </div>
 
           <div className="btns">
-            <HeroBtn name="our menu" target="menu" />
+            <HeroBtn name="order online" target="menu" />
             <HeroBtn name="book a table" target="book-a-table" />
           </div>
         </div>
