@@ -31,7 +31,7 @@ export default function Header() {
         {/* <a href="/"><img src="assets/img/logo.png" alt="" className="img-fluid" />
         {/* </a> */}
         <NavBar />
-        <AppBtn name="book a table" />
+        <AppBtn name="order online" />
       </div>
     </header>
   );

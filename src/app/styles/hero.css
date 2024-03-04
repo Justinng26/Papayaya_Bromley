@@ -1,6 +1,7 @@
 #hero {
   width: 100%;
   height: 100vh;
+  background: url("../../../public/assets/images/hero-bg.jpg") top center;
   background-size: cover;
   position: relative;
   padding: 0;

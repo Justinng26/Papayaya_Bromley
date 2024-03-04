@@ -25,23 +25,23 @@ export default function Hero() {
               Welcome to <span>Papayaya</span>
             </h1>
             <h2>A truly authentic street food experience!</h2>
+
+            <div className="btns">
+              <HeroBtn name="order online" target="menu" />
+              <HeroBtn name="book a table" target="book-a-table" />
+            </div>
           </div>
 
-          <div className="btns">
-            <HeroBtn name="order online" target="menu" />
-            <HeroBtn name="book a table" target="book-a-table" />
+          <div
+            className="col-lg-4 d-flex align-items-center justify-content-center position-relative"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <a
+              href="https://www.youtube.com/watch?v=ucCNLqSbzGM"
+              className="glightbox play-btn"
+            ></a>
           </div>
-        </div>
-
-        <div
-          className="col-lg-4 d-flex align-items center justify-content-center position-relative"
-          data-aos="zoom-in"
-          data-aos-delay="200"
-        >
-          <a
-            href="https://www.youtube.com/watch?v=J3s7l1l8VhM"
-            className="glightbox play-btn"
-          ></a>
         </div>
       </div>
     </section>
