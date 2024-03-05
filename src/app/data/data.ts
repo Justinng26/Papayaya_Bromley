@@ -50,3 +50,23 @@ export const navs = [
     active: false,
   },
 ];
+export const whyUs = [
+  {
+    id: 1,
+    title: "Lorem Ipsum",
+    content:
+      "Ullamco laboris nisi ut aliquip ex ea commodo consequat. Et harum quidem.",
+  },
+  {
+    id: 2,
+    title: "Repellat Nihil",
+    content:
+      "Dolorem eum fugiat quo voluptas nulla pariatur. Dolorem eum fugiat.",
+  },
+  {
+    id: 3,
+    title: "Ad ad velit",
+    content:
+      "Ullamco laboris nisi ut aliquip ex ea commodo consequat. Et harum quidem.",
+  },
+];
