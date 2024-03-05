@@ -2,7 +2,7 @@ import WhyUsCard from "../components/WhyUsCard";
 import "../styles/whyUs.css";
 
 async function getWhyUsData() {
-  const res = await fetch("http://localhost:3000/api/whyUs");
+  const res = await fetch("http://localhost:3000/api/whyus");
   return res.json();
 }
 
