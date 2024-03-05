@@ -19,12 +19,13 @@ export default function About() {
 
           <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
             <h3>
-              Voluptatem dignissimos provident quasi corporis voluptates sit
-              assumenda.
+              All our food ingredients are uniquely sourced from Malaysia,
+              Thailand and other parts of South East Asia.
             </h3>
             <p className="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              The exotic flavours will lighten up any palate, accompanied by
+              fine wine or an Asian beer makes this the best place to eat in
+              Bromley Town.
             </p>
 
             <ul>
@@ -44,13 +45,7 @@ export default function About() {
               </li>
             </ul>
 
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-              irure dolor in reprehenderit in voluptate velit esse cillum dolore
-              eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est
-              laborum
-            </p>
+            <p>This is Papayaya.</p>
           </div>
         </div>
       </div>
