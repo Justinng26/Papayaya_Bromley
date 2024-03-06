@@ -25,7 +25,7 @@ export default function Header() {
     >
       <div className="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
         <h1 className="logo me-auto me-lg-0">
-          <a href="/">Papayaya</a>
+          <a href="/">LOGO</a>
         </h1>
         {/* insert image logo */}
         {/* <a href="/"><img src="assets/img/logo.png" alt="" className="img-fluid" />
