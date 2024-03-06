@@ -1,3 +1,4 @@
+import SectionTitle from "../components/SectionTitle";
 import WhyUsCard from "../components/WhyUsCard";
 import "../styles/whyUs.css";
 
@@ -11,6 +12,7 @@ export default async function WhyUs() {
   return (
     <section id="why-us" className="why-us">
       <div className="container">
+        <SectionTitle title="Why Us" subtitle="Why choose Papayaya" />
         <div className="row">
           {items &&
             items.length > 0 &&
