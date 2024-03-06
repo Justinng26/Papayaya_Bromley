@@ -25,6 +25,7 @@
   height: auto;
   border: 4px solid rgba(255, 255, 255, 0.2);
   position: relative;
+  filter: brightness(0.8);
 }
 
 .about .about-img:before {

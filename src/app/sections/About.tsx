@@ -1,5 +1,5 @@
 import "../styles/about.css";
-import aboutImage from "../../../public/assets/images/about.jpg";
+import aboutImage from "../../../public/assets/images/Papayaya_interior.jpeg";
 import Image from "next/image";
 
 export default function About() {
