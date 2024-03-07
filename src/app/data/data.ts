@@ -335,14 +335,26 @@ export const filters = [
   },
   {
     id: 3,
-    name: "Salads",
-    category: "salads",
+    name: "Soup Noodles",
+    category: "soup-noodles",
     active: false,
   },
   {
     id: 4,
-    name: "Specialty",
-    category: "specialty",
+    name: "Noodles & Rice",
+    category: "noodles-rice",
+    active: false,
+  },
+  {
+    id: 5,
+    name: "Curry Dishes with Thai Jasmine Rice",
+    category: "curry-dishes",
+    active: false,
+  },
+  {
+    id: 6,
+    name: "Wok Fry: - Side Dishes",
+    category: "wok-fry",
     active: false,
   },
 ];
