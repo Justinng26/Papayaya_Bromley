@@ -10,14 +10,6 @@ export default function MenuItem({
     name: string;
     // preview: string;
     price?: number;
-    // ingredients?: string;
-    allergy?: "Vegetarian | Vegan | Nut";
-    quantity?: number;
-    options?: Array<{
-      name: string;
-      price: number;
-    }>;
-    servingSize?: number;
   };
 }) {
   return (
@@ -28,7 +20,25 @@ export default function MenuItem({
         <Link href={`/menu/${item.id}`}>{item.name}</Link>
         <span>£{item.price}</span>
       </div>
-      <div className="menu-ingredients">{item.quantity}</div>
+      {/* <div className="menu-ingredients">{item.quantity}</div> */}
     </div>
   );
 }
+
+// export default function MenuItem({
+//   item,
+// }: {
+//   item: {
+//     id: number;
+//     name: string;
+//     // preview: string;
+//     price?: number;
+//     // ingredients?: string;
+//     allergy?: "Vegetarian | Vegan | Nut";
+//     quantity?: number;
+//     options?: Array<{
+//       name: string;
+//       price: number;
+//     }>;
+//     servingSize?: number;
+//   };
