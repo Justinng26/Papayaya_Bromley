@@ -83,19 +83,17 @@ export default function Menu() {
         {/* Left arrow */}
         <div className="pagination">
           <button
+            className="bi bi-arrow-left"
             onClick={() => handlePageChange(currentPage - 1)}
             disabled={currentPage === 1}
-          >
-            {"<"}
-          </button>
+          ></button>
 
           {/* Right arrow */}
           <button
+            className="bi bi-arrow-right"
             onClick={() => handlePageChange(currentPage + 1)}
             disabled={currentPage === totalPages}
-          >
-            {">"}
-          </button>
+          ></button>
         </div>
       </div>
     </section>

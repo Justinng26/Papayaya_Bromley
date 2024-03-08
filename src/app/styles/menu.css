@@ -39,15 +39,14 @@
 .pagination button {
   cursor: pointer;
   display: inline-block;
-  padding: 8px 12px 10px 12px;
-  font-size: 16px;
-  font-weight: 500;
+  width: 44px;
+  height: 44px;
+  font-size: 28px;
   line-height: 1;
-  color: #fff;
+  color: #cda45e;
   margin: 0 5px; /* Adjust the margin as needed */
   transition: all ease-in-out 0.3s;
   border-radius: 50px;
-  font-family: "Playfair Display", serif;
 }
 
 .pagination button.disabled {
@@ -55,7 +54,11 @@
   cursor: not-allowed;
 }
 
-.pagination button:hover,
+.pagination button:hover {
+  background: #cda45e;
+  color: #1a1814;
+}
+
 .pagination button:disabled {
-  color: #cda45e;
+  pointer-events: none;
 }
