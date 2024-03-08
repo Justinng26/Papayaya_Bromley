@@ -394,6 +394,57 @@ export const menu = [
       { name: "Seafood", price: "11.50" },
     ],
   },
+
+  // Noodles and Rice
+  {
+    id: 34,
+    name: "Pad Thai",
+    price: "-",
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "noodles-rice",
+    allergy: "Nut",
+    options: [
+      { name: "Vegetable", price: "9.50" },
+      { name: "Beef", price: "10.50" },
+      { name: "Chicken", price: 9.95 },
+      { name: "Prawn", price: 10.95 },
+      { name: "Pork", price: 9.95 },
+      { name: "Seafood", price: "11.50" },
+    ],
+    description: `Popular Thai wok fried noodles, egg, bean curd, bean sprouts, chive, sweet turnip, peanut, chilli flakes, lemon with a homemade sauce.`,
+  },
+  {
+    id: 35,
+    name: "Char Kwei Tiew",
+    price: "-",
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "noodles-rice",
+    options: [
+      { name: "Vegetable", price: "9.50" },
+      { name: "Beef", price: "10.50" },
+      { name: "Chicken", price: 9.95 },
+      { name: "Prawn", price: 10.95 },
+      { name: "Pork", price: 9.95 },
+      { name: "Seafood", price: "11.50" },
+    ],
+    description: `Popular Malaysian wok fried fresh hofun, egg, bean sprout, chives, spring onion with dark sweet soy sauce.`,
+  },
+  {
+    id: 36,
+    name: "Singapore Fried Noodle",
+    price: "-",
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "noodles-rice",
+    options: [
+      { name: "Vegetable", price: "9.50" },
+      { name: "Beef", price: "10.50" },
+      { name: "Chicken", price: 9.95 },
+      { name: "Prawn", price: 10.95 },
+      { name: "Pork", price: 9.95 },
+      { name: "Seafood", price: "11.50" },
+    ],
+    description: `Wok fried noodles with eggs, bok choi, bean sprout, onions and tofu.`,
+  },
 ];
 
 export const filters = [
@@ -423,13 +474,19 @@ export const filters = [
   },
   {
     id: 5,
-    name: "Curry Dishes with Thai Jasmine Rice",
-    category: "curry-dishes",
+    name: "Side Dishes",
+    category: "side-dishes",
     active: false,
   },
   {
     id: 6,
-    name: "Wok Fry: - Side Dishes",
+    name: "Curry Dishes",
+    category: "curry-dishes",
+    active: false,
+  },
+  {
+    id: 7,
+    name: "Wok Fry dishes",
     category: "wok-fry",
     active: false,
   },
