@@ -5,6 +5,7 @@ import { filters } from "../data/data";
 import "../styles/menu.css";
 import SectionTitle from "../components/SectionTitle";
 import MenuItem from "../components/MenuItem";
+import Preloader from "../components/Preloader";
 
 export default function Menu() {
   const [data, setData] = useState([]);
