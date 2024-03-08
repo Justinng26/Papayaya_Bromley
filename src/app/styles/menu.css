@@ -28,3 +28,34 @@
 .menu #menu-filter li:last-child {
   margin-right: 0;
 }
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.pagination button {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 12px 10px 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  color: #fff;
+  margin: 0 5px; /* Adjust the margin as needed */
+  transition: all ease-in-out 0.3s;
+  border-radius: 50px;
+  font-family: "Playfair Display", serif;
+}
+
+.pagination button.disabled {
+  opacity: 0.5; /* You can adjust the opacity to visually indicate a disabled state */
+  cursor: not-allowed;
+}
+
+.pagination button:hover,
+.pagination button:disabled {
+  color: #cda45e;
+}
