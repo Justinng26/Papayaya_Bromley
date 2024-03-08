@@ -83,7 +83,7 @@ export const menu = [
   {
     id: 2,
     name: "Japanese Edamame",
-    price: 5.5,
+    price: "5.50",
     // preview: "/assets/images/papayaya/Papayaya_JapaneseEdamame.jpg",
     category: "starters",
     allergy: "Vegetarian | Vegan",
@@ -92,7 +92,7 @@ export const menu = [
   {
     id: 3,
     name: "Chicken Satay",
-    price: 6.5,
+    price: "6.50",
     // preview: "/assets/images/menu/cake.jpg",
     category: "starters",
     quantity: 4,
@@ -101,7 +101,7 @@ export const menu = [
   {
     id: 4,
     name: "Crispy Spicy Thai Chicken Wings",
-    price: 6.5,
+    price: "6.50",
     // preview: "/assets/images/menu/caesar.jpg",
     category: "starters",
     quantity: 4,
@@ -110,7 +110,7 @@ export const menu = [
   {
     id: 5,
     name: "Crispy Fried Wanton",
-    price: 6.5,
+    price: "6.50",
     // preview: "/assets/images/menu/tuscan-grilled.jpg",
     category: "starters",
     quantity: "4",
@@ -119,7 +119,7 @@ export const menu = [
   {
     id: 6,
     name: "Tender Meaty Spare Ribs - spicy",
-    price: 6.5,
+    price: "6.50",
     // preview: "/assets/images/menu/mozzarella.jpg",
     category: "starters",
     quantity: 4,
@@ -128,7 +128,7 @@ export const menu = [
   {
     id: 7,
     name: "Tender Meaty Honey Spare Ribs",
-    price: 6.5,
+    price: "6.50",
     // preview: "/assets/images/menu/greek-salad.jpg",
     category: "starters",
     description: `Marinated in honey sauce topped with sesame seeds.`,
@@ -136,7 +136,7 @@ export const menu = [
   {
     id: 8,
     name: "Thai Fish Cakes",
-    price: 6.5,
+    price: "6.50",
     // preview: "/assets/images/menu/spinach-salad.jpg",
     category: "starters",
     quantity: 4,
@@ -155,7 +155,7 @@ export const menu = [
   {
     id: 10,
     name: "Crispy Aromatic Duck Spring Rolls",
-    price: 6.5,
+    price: "6.50",
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "starters",
     quantity: 4,
@@ -164,7 +164,7 @@ export const menu = [
   {
     id: 11,
     name: "Cripsy Sesame Prawn Rolls",
-    price: 6.5,
+    price: "6.50",
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "starters",
     quantity: 4,
@@ -192,7 +192,7 @@ export const menu = [
   {
     id: 14,
     name: "Butterfly Prawn",
-    price: 7.5,
+    price: "7.50",
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "starters",
     quantity: 4,
@@ -201,7 +201,7 @@ export const menu = [
   {
     id: 15,
     name: "Popcorn Prawn",
-    price: 6.5,
+    price: "6.50",
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "starters",
     description: `Crispy prawns served with mayonaise, topped with black sesame seeds.`,
@@ -219,7 +219,7 @@ export const menu = [
   {
     id: 17,
     name: "Gyoza- Chicken dumplings",
-    price: 6.5,
+    price: "6.50",
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "starters",
     quantity: 4,
@@ -229,6 +229,7 @@ export const menu = [
     id: 18,
     name: "Tom Yum Soup",
     // preview: "/assets/images/menu/lobster-roll.jpg",
+    price: "-", // price varies
     category: "starters",
     options: [
       { name: "Chicken", price: 5.95 },
@@ -241,6 +242,7 @@ export const menu = [
     id: 19,
     name: "Tom Kha Soup",
     // preview: "/assets/images/menu/lobster-roll.jpg",
+    price: "-", // price varies
     category: "starters",
     options: [
       { name: "Chicken", price: 5.95 },
@@ -278,7 +280,7 @@ export const menu = [
   {
     id: 23,
     name: "Salt and Pepper Crispy Squid OR Prawn",
-    price: 7.5,
+    price: "7.50",
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "starters",
     description: `Wok tossed with Thai chilli and peppercorn salt.`,
@@ -294,7 +296,7 @@ export const menu = [
   {
     id: 25,
     name: "Som Tum with Fried Chicken Wings and Sticky Rice",
-    price: 17.5,
+    price: "17.50",
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "starters",
     servingSize: 2,
@@ -303,7 +305,7 @@ export const menu = [
   {
     id: 26,
     name: "Sesame Prawn Roll, Gyoza Chicken, Thai Fish Cake, Chicken Satay, Vegetable Spring Roll",
-    price: 15.5,
+    price: "15.50",
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "starters",
     servingSize: 2,

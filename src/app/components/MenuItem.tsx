@@ -9,7 +9,7 @@ export default function MenuItem({
     id: number;
     name: string;
     // preview: string;
-    price?: number;
+    price?: number | string;
   };
 }) {
   return (

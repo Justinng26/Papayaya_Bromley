@@ -37,7 +37,7 @@ export default function Menu() {
 
         <div className="row" data-aos="fade-up" data-aos-delay="100">
           <div className="col-lg-12 d-flex justify-content-center">
-            <ul id="menu-flters">
+            <ul id="menu-filters">
               {filters.map((filter) => (
                 <li
                   key={filter.id}
