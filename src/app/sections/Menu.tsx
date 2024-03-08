@@ -6,10 +6,11 @@ import "../styles/menu.css";
 import SectionTitle from "../components/SectionTitle";
 import MenuItem from "../components/MenuItem";
 import Preloader from "../components/Preloader";
-
+const itemsPerPage = 10;
 export default function Menu() {
   const [data, setData] = useState([]);
   const [items, setItems] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
 
   const getMenuData = () => {
     fetch("http://localhost:3000/api/menu")
@@ -28,7 +29,14 @@ export default function Menu() {
     setItems(data);
   }, [data]);
 
-  const handleFilterChange = (id: number, category: string) => {};
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = items.slice(indexOfFirstItem, indexOfLastItem);
+  const totalPages = Math.ceil(items.length / itemsPerPage);
+
+  const handlePageChange = (pageNumber: number) => {
+    setCurrentPage(pageNumber);
+  };
 
   return (
     <section id="menu" className="menu section-bg">
@@ -58,8 +66,8 @@ export default function Menu() {
         >
           {!items ? (
             <Preloader />
-          ) : items.length > 0 ? (
-            items.map(
+          ) : currentItems.length > 0 ? (
+            currentItems.map(
               (item: {
                 id: number;
                 name: string;
@@ -70,6 +78,24 @@ export default function Menu() {
           ) : (
             <Preloader />
           )}
+        </div>
+
+        {/* Left arrow */}
+        <div className="pagination">
+          <button
+            onClick={() => handlePageChange(currentPage - 1)}
+            disabled={currentPage === 1}
+          >
+            {"<"}
+          </button>
+
+          {/* Right arrow */}
+          <button
+            onClick={() => handlePageChange(currentPage + 1)}
+            disabled={currentPage === totalPages}
+          >
+            {">"}
+          </button>
         </div>
       </div>
     </section>
