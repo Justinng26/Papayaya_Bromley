@@ -6,10 +6,10 @@ export default function MenuItem({
   item,
 }: {
   item: {
-    id: number;
+    id: string | number;
     name: string;
     // preview: string;
-    price?: number | string;
+    price: number | string;
   };
 }) {
   return (
