@@ -988,7 +988,182 @@ export const menu = [
   },
 
   // vegan
-  {},
+  {
+    id: "V1",
+    name: "Japanese Edamame (VG)",
+    price: "5.50",
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "vegan",
+    description: "With light sea salt flakes.",
+  },
+  {
+    id: "V2",
+    name: "Crispy Vegetable Spring Rolls (VG)",
+    price: 5.95,
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "vegan",
+    quantity: 4,
+    description:
+      "Filled with vermicelli noodles, shredded fungus and mixed vegetables.",
+  },
+  {
+    id: "V3",
+    name: "Gyoza -Vegetable dumplings (VG)",
+    price: 5.95,
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "vegan",
+    quantity: 4,
+    description: "Fried vegetable dumplings served with Japanese soy sauce.",
+  },
+  {
+    id: "V4",
+    name: "Vegetable Tempura",
+    price: 5.95,
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "vegan",
+  },
+  {
+    id: "V5",
+    name: "Deep Fried battered Pumpkin served with sweet chilli sauce",
+    price: 5.95,
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "vegan",
+  },
+  {
+    id: "V6",
+    name: "Salt and Pepper crispy Tofu (VG)",
+    price: 5.95,
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "vegan",
+  },
+  {
+    id: "V7",
+    name: "Crispy Tofu in garlic, chilli and peppercorn salt",
+    price: 5.95,
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "vegan",
+  },
+  {
+    id: "V8",
+    name: "Som Tum (Thai Papaya Salad) (VG) (N)",
+    price: 7.95,
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "vegan",
+    allergy: "Nut",
+    description:
+      "Shredded Thai green papaya mixed with cherry tomato, peanut, chilli, palm sugar and lemon juice.",
+  },
+  {
+    id: "V9",
+    name: "Crispy Roti and curry sauce",
+    price: 5.95,
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "vegan",
+  },
+  {
+    id: "V10",
+    name: "Thai Green Curry (VG)",
+    price: "9.50",
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "vegan",
+    description:
+      "Aromatic Green curry with coconut milk, Thai aubergine, sweet basil, bamboo shoot and lime leaves.",
+  },
+  {
+    id: "V11",
+    name: "Thai Red Curry (VG)",
+    price: "9.50",
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "vegan",
+    description:
+      "Aromatic red curry with coconut milk, tomatoes, bamboo shoot, pineapples, lime leaves.",
+  },
+  {
+    id: "V12",
+    name: "Pan fried Tofu with mushroom sauce (VG)",
+    price: 6.95,
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "vegan",
+    description: "Stir fried tofuShimaji mushroom with mushroom sauce.",
+  },
+  {
+    id: "V13",
+    name: "Mixed Vegetable with mushroom sauce",
+    price: 6.95,
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "vegan",
+    description:
+      "Wok fried broccoli, baby corn, carrot, fine beans, chilli, ginger, garlic with mushroom sauce.",
+  },
+  {
+    id: "V14",
+    name: "Broccoli with mushroom sauce (VG)",
+    price: 6.95,
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "vegan",
+    description: "Wok fried broccoli, ginger, garlic with mushroom sauce.",
+  },
+  {
+    id: "V15",
+    name: "Thai Sweet and Sour (VG)",
+    price: 6.95,
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "vegan",
+    description: "Wok fried vegetable sweet and sour sauce.",
+  },
+  {
+    id: "V16",
+    name: "Pad Thai",
+    price: "9.50",
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "vegan",
+    allergy: "Nut",
+    description:
+      "Popular Thai wok fried noodles, egg, bean curd, bean sprouts, chive, sweet turnip, peanut, chilli flakes, lemon with a homemade sauce.",
+  },
+  {
+    id: "V17",
+    name: "Char Kwei Tiew",
+    price: "9.50",
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "vegan",
+    description:
+      "Popular Malaysian wok fried fresh hofun, bean sprout, chives, spring onion with dark sweet soy sauce.",
+  },
+  {
+    id: "V18",
+    name: "Singapore Fried Noodle",
+    price: "9.50",
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "vegan",
+    description:
+      "Wok fried rice vermicelli noodles, bean sprout, onion with curry spices.",
+  },
+  {
+    id: "V19",
+    name: "Yaki Soba",
+    price: "9.50",
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "vegan",
+    description:
+      "Wok fried Japanese noodles with cabbage, carrot, spring onion, bean sprout and mixed peppers.",
+  },
+  {
+    id: "V20",
+    name: "Thai Jasmin Rice",
+    price: 2.95,
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "vegan",
+    description: "Boiled Jasmine Rice.",
+  },
+  {
+    id: "V21",
+    name: "Thai Sticky Rice",
+    price: 3.95,
+    // preview: "/preview: /assets/images/menu/lobster-roll.jpg",
+    category: "vegan",
+    description: "Steamed sticky rice.",
+  },
 ];
 
 export const filters = [
