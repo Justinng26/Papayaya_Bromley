@@ -5,7 +5,7 @@
   z-index: 996;
 }
 
-#topbar .topbar-scrolled {
+#topbar.topbar-scrolled {
   top: -40px;
 }
 

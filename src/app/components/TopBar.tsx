@@ -20,7 +20,7 @@ export default function TopBar() {
   return (
     <div
       id="topbar"
-      className={`d-flex align-items-center fixed-top ${scroll > 100 ? "topbar-scrolled" : undefined}`}
+      className={`fixed-top d-flex align-items-center ${scroll > 100 ? "topbar-scrolled" : undefined}`}
     >
       <div className="container d-flex justify-content-center justify-content-md-between">
         <div className="contact-info d-flex align-items-center">
