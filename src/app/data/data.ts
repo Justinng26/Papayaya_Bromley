@@ -1150,7 +1150,7 @@ export const menu = [
   },
   {
     id: "V20",
-    name: "Thai Jasmin Rice",
+    name: "Thai Jasmine Rice",
     price: 2.95,
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "vegan",
