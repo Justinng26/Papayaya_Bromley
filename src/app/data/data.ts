@@ -1160,9 +1160,55 @@ export const menu = [
     id: "V21",
     name: "Thai Sticky Rice",
     price: 3.95,
-    // preview: "/preview: /assets/images/menu/lobster-roll.jpg",
+    // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "vegan",
     description: "Steamed sticky rice.",
+  },
+
+  // kids menu
+  {
+    id: "K1",
+    name: "Japanese Chicken Katsu",
+    price: 10.95,
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "kids",
+    description:
+      "Deep fried chicken fillet in breadcrumb served with sweet and sour sauce.",
+  },
+  {
+    id: "K2",
+    name: "Fried Chicken Wings",
+    price: 6.95,
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "kids",
+  },
+  {
+    id: "K3",
+    name: "Crispy Vegetable Spring Rolls",
+    price: 5.95,
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "kids",
+  },
+  {
+    id: "K4",
+    name: "Wok fried noodles with eggs and chicken",
+    price: 6.95,
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "kids",
+  },
+  {
+    id: "K5",
+    name: "Wok fried rice with eggs, sweetcorn and chicken",
+    price: 6.95,
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "kids",
+  },
+  {
+    id: "K6",
+    name: "Sweet potato chips",
+    price: 6.95,
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "kids",
   },
 ];
 
