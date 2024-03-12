@@ -233,8 +233,8 @@ export const menu = [
     category: "starters",
     options: [
       { name: "Chicken", price: 5.95 },
-      { name: "Prawn", price: 6.5 },
-      { name: "Oyster mushroom", price: 5.5 },
+      { name: "Prawn", price: "6.50" },
+      { name: "Oyster mushroom", price: "5.50" },
     ],
     description: `Popular Thai spicy and sour soup with mushroom, lemongrass, galangal, coriander, chilli, lemon juice and fish sauce.`,
   },
@@ -246,8 +246,8 @@ export const menu = [
     category: "starters",
     options: [
       { name: "Chicken", price: 5.95 },
-      { name: "Prawn", price: 6.5 },
-      { name: "Oyster mushroom", price: 5.5 },
+      { name: "Prawn", price: "6.50" },
+      { name: "Oyster mushroom", price: "5.50" },
     ],
     description: `Popular Thai creamy spicy soup cooked with coconut milk, galangal, lemongrass, lime leaves, chilli, coriander, lemon juice and fish sauce.`,
   },
@@ -299,7 +299,6 @@ export const menu = [
     price: "17.50",
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "starters",
-    servingSize: 2,
     description: `Serves 2.`,
   },
   {
@@ -308,7 +307,6 @@ export const menu = [
     price: "15.50",
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "starters",
-    servingSize: 2,
     description: `2 of each item.`,
   },
   {
@@ -317,7 +315,6 @@ export const menu = [
     price: 13.95,
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "starters",
-    servingSize: 2,
     description: `2 of each item.`,
   },
 
