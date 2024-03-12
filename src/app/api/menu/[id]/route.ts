@@ -5,7 +5,7 @@ export async function GET(
   { params }: { params: { id: string } }
 ) {
   const food = menu.find(
-    (item: { id: number }) => item.id.toString() === params.id
+    (item: { id: number | string }) => item.id.toString() === params.id
   );
   return Response.json(food);
 }
