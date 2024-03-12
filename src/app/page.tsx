@@ -2,6 +2,7 @@ import About from "./sections/About";
 import Hero from "./sections/Hero";
 import WhyUs from "./sections/WhyUs";
 import Menu from "./sections/Menu";
+import Events from "./sections/Events";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <About />
         <WhyUs />
         <Menu />
+        <Events />
       </main>
     </>
   );

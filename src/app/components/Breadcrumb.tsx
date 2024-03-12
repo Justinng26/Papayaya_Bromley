@@ -13,6 +13,7 @@ export default function Breadcrumb({ page }: { page: string }) {
                 <i className="bi bi-house-door-fill"></i>
               </Link>
             </li>
+
             <li>{page}</li>
           </ol>
         </div>
