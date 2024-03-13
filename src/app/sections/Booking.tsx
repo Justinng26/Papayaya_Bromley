@@ -35,6 +35,28 @@ export default function Booking() {
     ) {
       setText({ ...text, validate: "Please fill in the required fields" });
     }
+
+    // post request to the server
+    try {
+      const response = await fetch("http://localhost:3000/api/booking", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(text),
+      });
+
+      setText({ ...text, validate: "loading" });
+
+      const result = await response.json();
+      if (result) {
+        setText({ ...text, validate: "success" });
+        // console.log('Success', result);
+      }
+    } catch (error) {
+      setText({ ...text, validate: "error" });
+      // console.error('Error:', error);
+    }
   };
 
   return (
