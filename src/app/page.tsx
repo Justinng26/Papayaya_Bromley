@@ -3,6 +3,7 @@ import Hero from "./sections/Hero";
 import WhyUs from "./sections/WhyUs";
 import Menu from "./sections/Menu";
 import Events from "./sections/Events";
+import Booking from "./sections/Booking";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <WhyUs />
         <Menu />
         <Events />
+        <Booking />
       </main>
     </>
   );

@@ -21,6 +21,10 @@
   padding-top: 110px;
 }
 
+#hero h2 {
+  padding-top: 10px;
+}
+
 @media (max-width: 992px) {
   #hero .container {
     padding-top: 98px;

@@ -584,7 +584,7 @@ export const menu = [
     price: "9.90",
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "noodles-rice",
-    description: `Tender breaded chicken marinated in teriyaki sauce bedded with green bok choi.`,
+    description: `Tender breaded chicken marinated in teriyaki sauce bedded with green bok choi. Served with Jasmine Rice.`,
   },
 
   // Side dishes
@@ -658,7 +658,7 @@ export const menu = [
       { name: "Seafood", price: "11.50" },
       { name: "Roast Duck", price: 10.95 },
     ],
-    description: `Aromatic Green curry with coconut milk, Thai aubergine, sweet basil, bamboo shoot and lime leaves.`,
+    description: `Aromatic Green curry with coconut milk, Thai aubergine, sweet basil, bamboo shoot and lime leaves. Served with Jasmine Rice.`,
   },
   {
     id: 53,
@@ -675,7 +675,7 @@ export const menu = [
       { name: "Seafood", price: "11.50" },
       { name: "Roast Duck", price: 10.95 },
     ],
-    description: `Aromatic red curry with coconut milk, tomatoes, bamboo shoot, pineapples, lime leaves and fish sauce.`,
+    description: `Aromatic red curry with coconut milk, tomatoes, bamboo shoot, pineapples, lime leaves and fish sauce. Served with Jasmine Rice.`,
   },
   {
     id: 54,
@@ -683,7 +683,7 @@ export const menu = [
     price: 10.95,
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "curry-dishes",
-    description: `Slow simmered with roasted coconut, galangal, lemongrass and chilli.`,
+    description: `Slow simmered with roasted coconut, galangal, lemongrass and chilli. Served with Jasmine Rice.`,
   },
   {
     id: 55,
@@ -691,7 +691,7 @@ export const menu = [
     price: 10.95,
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "curry-dishes",
-    description: `Slow simmered with roasted coconut, galangal, lemongrass, chilli and curry leaves.`,
+    description: `Slow simmered with roasted coconut, galangal, lemongrass, chilli and curry leaves. Served with Jasmine Rice.`,
   },
   {
     id: 56,
@@ -699,7 +699,7 @@ export const menu = [
     price: 10.95,
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "curry-dishes",
-    description: `Deep fried chicken fillet in breadcrumbs served with Japanese curry sauce.`,
+    description: `Deep fried chicken fillet in breadcrumbs served with Japanese curry sauce. Served with Jasmine Rice.`,
   },
 
   // Wok fry dishes
@@ -709,7 +709,7 @@ export const menu = [
     price: 10.95,
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "wok-fry",
-    description: `Wok fried prawns with onions, cherry tomatoes, mixed peppers in sambal chilli paste.`,
+    description: `Wok fried prawns with onions, cherry tomatoes, mixed peppers in sambal chilli paste. Served with Jasmine Rice.`,
   },
   {
     id: 58,
@@ -717,7 +717,7 @@ export const menu = [
     price: 11.95,
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "wok-fry",
-    description: `Wok fried prawns with kangkung and sambal chilli paste.`,
+    description: `Wok fried prawns with kangkung and sambal chilli paste. Served with Jasmine Rice.`,
   },
   {
     id: 59,
@@ -725,7 +725,7 @@ export const menu = [
     price: 10.95,
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "wok-fry",
-    description: `Wok fried beek with minced chilli, fine beans, onion, garlic and basil.`,
+    description: `Wok fried beek with minced chilli, fine beans, onion, garlic and basil. Served with Jasmine Rice.`,
   },
   {
     id: 60,
@@ -733,7 +733,7 @@ export const menu = [
     price: 10.95,
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "wok-fry",
-    description: `Roast duck breast infused in Thai tamarind sauce.`,
+    description: `Roast duck breast infused in Thai tamarind sauce. Served with Jasmine Rice.`,
   },
   {
     id: 61,
@@ -741,7 +741,7 @@ export const menu = [
     price: 10.95,
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "wok-fry",
-    description: `King prawn infused in Thai tamarind sauce.`,
+    description: `King prawn infused in Thai tamarind sauce. Served with Jasmine Rice.`,
   },
   {
     id: 62,
@@ -756,6 +756,7 @@ export const menu = [
       { name: "Prawn", price: 10.95 },
       { name: "Seafood", price: "11.50" },
     ],
+    description: `Stir fried cashew nuts with bamboo shoot, mushroom, onions and carrots. Served with Jasmine Rice.`,
   },
   {
     id: 63,
@@ -770,7 +771,7 @@ export const menu = [
       { name: "Prawn", price: 10.95 },
       { name: "Seafood", price: "11.50" },
     ],
-    description: `Classic Thai dish stir fried with minced chilli, garlic and hot basil.`,
+    description: `Classic Thai dish stir fried with minced chilli, garlic and hot basil. Served with Jasmine Rice.`,
   },
   {
     id: 64,
@@ -785,7 +786,7 @@ export const menu = [
       { name: "Prawn", price: 10.95 },
       { name: "Seafood", price: "11.50" },
     ],
-    description: `Wok fried ginger, garlic, spring onion and mixed peppers with oyster sauce.`,
+    description: `Wok fried ginger, garlic, spring onion and mixed peppers with oyster sauce. Served with Jasmine Rice.`,
   },
   {
     id: 65,
@@ -800,7 +801,7 @@ export const menu = [
       { name: "Prawn", price: 10.95 },
       { name: "Seafood", price: "11.50" },
     ],
-    description: `Wok fried mixed peppers, onion, pineapple and cherry tomatoes in sweet and sour sauce.`,
+    description: `Wok fried mixed peppers, onion, pineapple and cherry tomatoes in sweet and sour sauce. Served with Jasmine Rice.`,
   },
   {
     id: 66,
@@ -815,7 +816,7 @@ export const menu = [
       { name: "Prawn", price: 10.95 },
       { name: "Seafood", price: "11.50" },
     ],
-    description: `Wok fried mixed pepper, onion, ginger, garlic, chilli with black bean sauce. `,
+    description: `Wok fried mixed pepper, onion, ginger, garlic, chilli with black bean sauce. Served with Jasmine Rice. `,
   },
 
   // Vegetable side dishes
@@ -967,7 +968,7 @@ export const menu = [
       { name: "Beef", price: "8.70" },
       { name: "Prawn", price: "8.95" },
     ],
-    description: `Wok fried mixed peppers, onion, pineapple and cherry tomatoes in sweet and sour sauce.`,
+    description: `Wok fried mixed peppers, onion, pineapple and cherry tomatoes in sweet and sour sauce. Served with Jasmine Rice.`,
   },
   {
     id: "EL8",
@@ -981,7 +982,7 @@ export const menu = [
       { name: "Beef", price: "8.70" },
       { name: "Prawn", price: "8.95" },
     ],
-    description: `Wok fried mixed pepper, onion, ginger, garlic, chilli with black bean sauce.`,
+    description: `Wok fried mixed pepper, onion, ginger, garlic, chilli with black bean sauce. Served with Jasmine Rice.`,
   },
 
   // vegan
@@ -1064,7 +1065,7 @@ export const menu = [
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "vegan",
     description:
-      "Aromatic Green curry with coconut milk, Thai aubergine, sweet basil, bamboo shoot and lime leaves.",
+      "Aromatic Green curry with coconut milk, Thai aubergine, sweet basil, bamboo shoot and lime leaves. Served with Jasmine Rice.",
   },
   {
     id: "V11",
@@ -1073,7 +1074,7 @@ export const menu = [
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "vegan",
     description:
-      "Aromatic red curry with coconut milk, tomatoes, bamboo shoot, pineapples, lime leaves.",
+      "Aromatic red curry with coconut milk, tomatoes, bamboo shoot, pineapples, lime leaves. Served with Jasmine Rice.",
   },
   {
     id: "V12",
@@ -1106,7 +1107,8 @@ export const menu = [
     price: 6.95,
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "vegan",
-    description: "Wok fried vegetable sweet and sour sauce.",
+    description:
+      "Wok fried vegetable sweet and sour sauce. Served with Jasmine Rice.",
   },
   {
     id: "V16",
@@ -1170,7 +1172,7 @@ export const menu = [
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "kids",
     description:
-      "Deep fried chicken fillet in breadcrumb served with sweet and sour sauce.",
+      "Deep fried chicken fillet in breadcrumb served with sweet and sour sauce. Served with Jasmine Rice.",
   },
   {
     id: "K2",
@@ -1323,5 +1325,20 @@ export const events = [
     ],
     summary: `Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
     velit esse cillum dolore eu fugiat nulla pariatur`,
+  },
+];
+
+export const bookings = [
+  {
+    id: 1,
+    details: {
+      name: "Example Name",
+      email: "info@example.com",
+      phone: "123456789",
+      date: "13-03-34",
+      time: "17:00",
+      people: "3",
+      message: "Birthday party for my nan",
+    },
   },
 ];
