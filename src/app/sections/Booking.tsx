@@ -152,6 +152,7 @@ export default function Booking() {
               placeholder="Message (Optional)"
               value={text.message}
               onChange={handleTextChange}
+              maxLength={5000}
             ></textarea>
           </div>
 
