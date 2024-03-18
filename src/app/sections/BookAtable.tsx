@@ -21,10 +21,12 @@ export default function BookAtable() {
 
           if (error) {
             alert(error);
+            console.log("error occured while sending email", error);
             return;
           }
 
           alert("email sent successfully");
+          console.log("email sent successfully");
         }}
         className="booking-form"
         data-aos="fade-up"
@@ -113,7 +115,8 @@ export default function BookAtable() {
             className="form-control"
             name="message"
             rows={5}
-            placeholder="Message (Optional)"
+            placeholder="Message"
+            // required
             // value={text.message}
             onChange={handleTextChange}
           ></textarea>

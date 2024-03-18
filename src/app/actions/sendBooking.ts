@@ -16,6 +16,16 @@ export const sendBooking = async (formData: FormData) => {
   const time = formData.get("time");
   const date = formData.get("date");
 
+  console.log("Form data extracted:", {
+    name,
+    email,
+    message,
+    people,
+    phone,
+    time,
+    date,
+  });
+
   if (
     !validateBooking(name, 500) ||
     !validateBooking(email, 500) ||
@@ -23,6 +33,7 @@ export const sendBooking = async (formData: FormData) => {
     !validateBooking(people, 3) ||
     !validateBooking(phone, 500)
   ) {
+    console.log("Validation failed");
     return {
       status: 400,
       message: "Invalid input",
@@ -46,6 +57,7 @@ export const sendBooking = async (formData: FormData) => {
         date: date as string,
       }),
     });
+    console.log("Email sent successfully");
   } catch (error: unknown) {
     console.error("Error type:", typeof error, "Error:", error);
     return {
@@ -53,6 +65,7 @@ export const sendBooking = async (formData: FormData) => {
     };
   }
 
+  console.log("sendBooking function completed");
   return {
     data,
   };
