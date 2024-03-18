@@ -1,25 +1,14 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import SectionTitle from "../components/SectionTitle";
 import InputBox from "../components/InputBox";
 import { sendBooking } from "../actions/sendBooking";
+import SubmitBtn from "../components/SubmitBtn";
 
 export default function BookAtable() {
-  //   const initialState = {
-  //     name: "",
-  //     email: "",
-  //     phone: "",
-  //     date: "",
-  //     time: "",
-  //     people: "",
-  //     message: "",
-  //     validate: "",
-  //   };
-
   const handleTextChange = () => {};
 
-  //   const [text, setText] = useState(initialState);
   return (
     <section id="booking" className="booking">
       <div className="container" data-aos="fade-up">
@@ -28,7 +17,14 @@ export default function BookAtable() {
 
       <form
         action={async (formData) => {
-          await sendBooking(formData);
+          const { data, error } = await sendBooking(formData);
+
+          if (error) {
+            alert(error);
+            return;
+          }
+
+          alert("email sent successfully");
         }}
         className="booking-form"
         data-aos="fade-up"
@@ -124,7 +120,7 @@ export default function BookAtable() {
         </div>
 
         <div className="text-center">
-          <button type="submit">Book a Table</button>
+          <SubmitBtn />
         </div>
       </form>
     </section>

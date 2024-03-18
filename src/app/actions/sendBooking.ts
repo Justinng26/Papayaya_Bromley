@@ -2,6 +2,8 @@
 
 import { Resend } from "resend";
 import { validateBooking, getErrorMessage } from "../lib/utils";
+import BookingFormEmail from "../email/BookingFormEmail";
+import React from "react";
 
 const resend = new Resend(process.env.BOOKING_API_KEY);
 
@@ -27,17 +29,31 @@ export const sendBooking = async (formData: FormData) => {
     };
   }
 
+  let data;
   try {
-    await resend.emails.send({
+    data = await resend.emails.send({
       from: "Test <onboarding@resend.dev>",
       to: "justinng878@gmail.com",
-      subject: "New booking",
+      subject: "Papayaya - New booking request! ",
       reply_to: email as string,
-      text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nDate: ${date}\nTime: ${time}\nPeople: ${people}\nMessage: ${message}`,
+      react: React.createElement(BookingFormEmail, {
+        name: name as string,
+        email: email as string,
+        message: message as string,
+        people: Number(people),
+        phone: phone as string,
+        time: time as string,
+        date: date as string,
+      }),
     });
   } catch (error: unknown) {
+    console.error("Error type:", typeof error, "Error:", error);
     return {
       error: getErrorMessage(error),
     };
   }
+
+  return {
+    data,
+  };
 };
