@@ -1,5 +1,4 @@
 import "../styles/testimonialCard.css";
-import Image from "next/image";
 
 export default function TestimonialCard({
   item,
@@ -11,6 +10,8 @@ export default function TestimonialCard({
     client: string;
     position: string;
   };
+
+  // ...
 }) {
   return (
     <div className="testimonial-card">
@@ -19,7 +20,8 @@ export default function TestimonialCard({
         {item.content}
         <i className="bx bxs-quote-alt-right quote-icon-right"></i>
       </p>
-      <Image src={item.avatar} alt="profile photo" />
+
+      <img src={item.avatar} className="testimonials-img" alt="profile photo" />
       <h3>{item.client}</h3>
       <h4>{item.position}</h4>
     </div>

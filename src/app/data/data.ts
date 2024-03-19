@@ -1348,7 +1348,7 @@ export const testimonials = [
     id: 1,
     content: `Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. 
     Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.`,
-    avatar: "./assets/images/testimonials/testimonials-1.jpg",
+    avatar: "./assets/images/testimonials-1.jpg",
     client: "Saul Goodman",
     position: "CEO",
   },
