@@ -38,7 +38,7 @@ export default function Hero() {
             data-aos-delay="200"
           >
             <a
-              href="https://www.youtube.com/watch?v=ucCNLqSbzGM"
+              href="https://www.youtube.com/watch?v=TZep24CJze8"
               className="glightbox play-btn"
             ></a>
           </div>
