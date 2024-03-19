@@ -3,6 +3,11 @@
   min-height: 320px;
 }
 
+.testimonials .stars {
+  color: #d3af71;
+  font-size: 25px;
+}
+
 .testimonials .testimonial-card .testimonials-img {
   width: 90px;
   border-radius: 50%;

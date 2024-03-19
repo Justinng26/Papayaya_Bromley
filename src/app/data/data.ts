@@ -1346,11 +1346,11 @@ export const bookings = [
 export const testimonials = [
   {
     id: 1,
-    content: `Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. 
-    Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.`,
-    avatar: "./assets/images/testimonials-1.jpg",
-    client: "Saul Goodman",
-    position: "CEO",
+    content: `Amazing food and ambience. A great stop when you are craving for Asian cuisine. Their servings are huge, totally worth it. Give them a visit.`,
+    avatar: "./assets/images/testimonials/Review-1.png",
+    client: "Danika Ahn",
+    position: "Local Guide",
+    rating: 5,
   },
   {
     id: 2,
@@ -1359,6 +1359,7 @@ export const testimonials = [
     avatar: "./assets/images/testimonials/testimonials-2.jpg",
     client: "Sara Wilsson",
     position: "Consultant",
+    rating: 4,
   },
   {
     id: 3,
@@ -1367,6 +1368,7 @@ export const testimonials = [
     avatar: "./assets/images/testimonials/testimonials-3.jpg",
     client: "Jena Karlis",
     position: "Store Owner",
+    rating: 4.5,
   },
   {
     id: 4,
@@ -1375,6 +1377,7 @@ export const testimonials = [
     avatar: "./assets/images/testimonials/testimonials-4.jpg",
     client: "Matt Brandon",
     position: "Freelancer",
+    rating: 5,
   },
   {
     id: 5,
@@ -1383,5 +1386,6 @@ export const testimonials = [
     avatar: "./assets/images/testimonials/testimonials-5.jpg",
     client: "John Larson",
     position: "Entrepreneur",
+    rating: 4,
   },
 ];
