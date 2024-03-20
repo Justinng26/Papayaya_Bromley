@@ -36,7 +36,7 @@ export default function Testimonials() {
             slidesPerView={"auto"}
             speed={600}
             autoplay={{
-              delay: 7500,
+              delay: 10000,
               disableOnInteraction: false,
             }}
             pagination={{
@@ -68,6 +68,7 @@ export default function Testimonials() {
                   avatar: string;
                   client: string;
                   position: string;
+                  rating: number;
                 }) => (
                   <SwiperSlide key={slide.id}>
                     <TestimonialCard item={slide} />

@@ -35,7 +35,7 @@ export default function Events() {
           <Swiper
             spaceBetween={0}
             autoplay={{
-              delay: 7500,
+              delay: 10000,
               disableOnInteraction: false,
             }}
             pagination={{

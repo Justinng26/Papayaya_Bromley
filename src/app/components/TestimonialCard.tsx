@@ -31,7 +31,7 @@ export default function TestimonialCard({
     <div className="testimonial-card">
       <p>
         <i className="bx bxs-quote-a;t-left quote-icon-left"></i>
-        {item.content}-
+        {item.content}
         <i className="bx bxs-quote-alt-right quote-icon-right"></i>
         <i className="stars">{renderStars(item.rating)}</i>
       </p>
