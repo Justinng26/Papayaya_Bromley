@@ -1385,3 +1385,38 @@ export const testimonials = [
     rating: 5,
   },
 ];
+
+export const gallery = [
+  {
+    id: 1,
+    image: "/assets/images/gallery/Hero1.jpg",
+  },
+  {
+    id: 2,
+    image: "/assets/images/Papayaya - High Street_hero_2.jpg",
+  },
+  {
+    id: 3,
+    image: "/assets/images/gallery/green-curry.jpg",
+  },
+  {
+    id: 4,
+    image: "/assets/images/gallery/Papayaya_banner.jpeg",
+  },
+  {
+    id: 5,
+    image: "/assets/images/gallery/Hero2.jpg",
+  },
+  {
+    id: 6,
+    image: "/assets/images/gallery/laksa-prawn-cracker.jpg",
+  },
+  {
+    id: 7,
+    image: "/assets/images/gallery/Papayaya_FloraTea.jpeg",
+  },
+  {
+    id: 8,
+    image: "/assets/images/gallery/Hero3.jpg",
+  },
+];

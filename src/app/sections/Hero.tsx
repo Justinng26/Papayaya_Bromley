@@ -7,7 +7,7 @@ import "../styles/hero.css";
 
 export default function Hero() {
   useEffect(() => {
-    new Glightbox({
+    Glightbox({
       selector: ".glightbox",
     });
   }, []);
