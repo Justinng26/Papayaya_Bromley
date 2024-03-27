@@ -7,6 +7,7 @@ export default function Breadcrumb({ page }: { page: string }) {
       <div className="container">
         <div className="d-flex justify-content-between align-items-center">
           <h2>{page}</h2>
+
           <ol>
             <li>
               <Link href="/">

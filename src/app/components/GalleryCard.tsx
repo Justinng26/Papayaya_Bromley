@@ -18,7 +18,7 @@ export default function GalleryCard({
     });
   }, []);
   return (
-    <div className="col-lg-3 col-md-4">
+    <div className="col-lg-3 col-md-4 col-sm-6">
       <div className="gallery-item">
         <a
           href={item.image}
@@ -31,6 +31,8 @@ export default function GalleryCard({
             style={{
               width: "100%",
               height: "250px",
+              padding: "10px",
+              opacity: "0.8",
             }}
             src={item.image}
             alt="Gallery Image"

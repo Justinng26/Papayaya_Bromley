@@ -120,7 +120,7 @@ export const menu = [
     id: 6,
     name: "Tender Meaty Spare Ribs - spicy",
     price: "6.50",
-    // preview: "/assets/images/menu/mozzarella.jpg",
+    preview: "/assets/images/papayaya/BBQRibs.jpg",
     category: "starters",
     quantity: 4,
     description: `Marinated in spicy Korean BBQ sauce topped with sesame seeds.`,

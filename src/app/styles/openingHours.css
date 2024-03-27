@@ -1,0 +1,45 @@
+.opening-hours {
+  background: url("../../../public/assets/images/Papayaya\ -\ High\ Street_hero_2.jpg")
+    center center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 80px 0;
+}
+
+.opening-hours::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.opening-hours .section-title h2 {
+  color: #fff;
+}
+
+.opening-hours .container {
+  position: relative;
+}
+
+.opening-hours .opening-hours-img {
+  display: flex;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.opening-hours .opening-hours-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5%;
+}
+
+@media (min-width: 1024px) {
+  #opening-hours {
+    background-attachment: fixed;
+  }
+}

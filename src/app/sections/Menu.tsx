@@ -42,6 +42,7 @@ export default function Menu() {
     filters.map((filter) => {
       filter.active = false;
       if (filter.id === id) filter.active = true;
+      return filter; // Add return statement here
     });
   };
   const handleFilterChange = (id: number, category: string) => {
@@ -88,7 +89,7 @@ export default function Menu() {
               (item: {
                 id: number;
                 name: string;
-                // preview: string;
+                preview: string;
                 price: number;
               }) => <MenuItem key={item.id} item={item} />
             )

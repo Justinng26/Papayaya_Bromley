@@ -6,6 +6,7 @@ import Events from "./sections/Events";
 import BookAtable from "./sections/BookAtable";
 import Testimonials from "./sections/Testimonials";
 import Gallery from "./sections/Gallery";
+import OpeningHours from "./sections/OpeningHours";
 // import Booking from "./sections/Booking";
 
 export default function Home() {
@@ -19,8 +20,9 @@ export default function Home() {
         <Events />
         {/* <Booking /> */}
         <BookAtable />
-        <Testimonials />
         <Gallery />
+        <Testimonials />
+        <OpeningHours />
       </main>
     </>
   );

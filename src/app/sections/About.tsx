@@ -10,7 +10,7 @@ export default function About() {
           <div
             className="col-lg-6 order-1 order-lg-2"
             data-oas="zoom-in"
-            data-oas-delay="100"
+            data-aos-delay="100"
           >
             <div className="about-img">
               <Image src={aboutImage} alt="restaurant setting" />
