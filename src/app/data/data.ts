@@ -1389,19 +1389,19 @@ export const testimonials = [
 export const gallery = [
   {
     id: 1,
-    image: "/assets/images/gallery/Hero1.jpg",
+    image: "/assets/images/gallery/Green_curry.jpeg",
   },
   {
     id: 2,
-    image: "/assets/images/Papayaya - High Street_hero_2.jpg",
+    image: "/assets/images/gallery/Gyoza.jpeg",
   },
   {
     id: 3,
-    image: "/assets/images/gallery/green-curry.jpg",
+    image: "/assets/images/gallery/Hero1.jpg",
   },
   {
     id: 4,
-    image: "/assets/images/gallery/Papayaya_banner.jpeg",
+    image: "/assets/images/gallery/Singapore_noodle.jpeg",
   },
   {
     id: 5,
@@ -1409,11 +1409,11 @@ export const gallery = [
   },
   {
     id: 6,
-    image: "/assets/images/gallery/laksa-prawn-cracker.jpg",
+    image: "/assets/images/gallery/laksa-prawn-cracker.jpeg",
   },
   {
     id: 7,
-    image: "/assets/images/gallery/Papayaya_FloraTea.jpeg",
+    image: "/assets/images/gallery/Flora_tea.jpeg",
   },
   {
     id: 8,
