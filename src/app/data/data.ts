@@ -33,16 +33,18 @@ export const navs = [
   },
   {
     id: 6,
-    name: "Testimonials",
-    target: "testimonials",
-    active: false,
-  },
-  {
-    id: 7,
     name: "Opening Hours",
     target: "opening-hours",
     active: false,
   },
+
+  {
+    id: 7,
+    name: "Testimonials",
+    target: "testimonials",
+    active: false,
+  },
+
   {
     id: 8,
     name: "Contact",

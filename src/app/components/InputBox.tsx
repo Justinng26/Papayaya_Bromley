@@ -7,7 +7,7 @@ interface InputBoxProps {
   // value: string;
   placeholder: string;
   required?: boolean;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   maxLength?: number;
 }
 
