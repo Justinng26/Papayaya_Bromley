@@ -24,10 +24,14 @@ export default function Contact() {
               <div className="address">
                 <i className="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>49 High Street, Bromley</p>
+                <p>
+                  49 High Street, Bromley
+                  <br />
+                  BR1 1LE
+                </p>
               </div>
 
-              <div className="open-hours">
+              {/* <div className="open-hours">
                 <i className="bi bi-clock"></i>
                 <h4>Open Hours:</h4>
                 <p>
@@ -39,7 +43,7 @@ export default function Contact() {
                   <br />
                   Monday: Closed
                 </p>
-              </div>
+              </div> */}
 
               <div className="email">
                 <i className="bi bi-envelope"></i>

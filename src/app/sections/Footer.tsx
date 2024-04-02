@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="row">
             <div className="col-lg-3 col-md-6">
               <div className="footer-info">
-                <h3>Restaurant</h3>
+                <h3>Papayaya</h3>
                 <p>
                   49 High Street, <br />
                   Bromley, BR1 1LE
@@ -23,24 +23,18 @@ export default function Footer() {
                 </p>
 
                 <div className="social-links mt-3">
-                  <a href="#" className="twitter">
-                    <i className="bx bxl-twitter"></i>
+                  <a
+                    href="https://www.facebook.com/toypapayaya/"
+                    className="facebook"
+                  >
+                    <i className="bi bi-facebook"></i>
                   </a>
 
-                  <a href="#" className="facebook">
-                    <i className="bx bxl-facebook"></i>
-                  </a>
-
-                  <a href="#" className="instagram">
-                    <i className="bx bxl-instagram"></i>
-                  </a>
-
-                  <a href="#" className="google-plus">
-                    <i className="bx bxl-skype"></i>
-                  </a>
-
-                  <a href="#" className="linkedin">
-                    <i className="bx bxl-linkedin"></i>
+                  <a
+                    href="https://www.instagram.com/papayaya.bromley/"
+                    className="instagram"
+                  >
+                    <i className="bx bi-instagram"></i>
                   </a>
                 </div>
               </div>
@@ -96,7 +90,17 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* newsletter?? */}
+            {/* Download our apps */}
+            <div className="col-lg-2 download-links">
+              <h4>Download our app </h4>
+              {/* <div className="download"> */}
+              <a href="#">
+                <img src="assets/images/app_store_badge.png" alt="app-store" />
+              </a>
+              <a href="#">
+                <img src="assets/img/google-play.png" alt="google-play" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
