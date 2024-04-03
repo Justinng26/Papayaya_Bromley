@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import "../styles/header.css";
 import AppBtn from "./AppBtn";
@@ -25,14 +26,21 @@ export default function Header() {
     >
       <div className="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
         <h1 className="logo me-auto me-lg-0">
-          <a href="/">LOGO</a>
+          <a href="/">
+            <Image
+              src="/assets/images/Papayaya_logo.jpg"
+              alt="restaurant logo"
+              width={40}
+              height={40}
+            />
+          </a>
         </h1>
-        {/* insert image logo */}
-        {/* <a href="/"><img src="assets/img/logo.png" alt="" className="img-fluid" />
-        {/* </a> */}
         <NavBar />
         <AppBtn name="order online" />
       </div>
     </header>
   );
+}
+{
+  /* style="width: 170px; height: 170px; border-radius: 22%; overflow: hidden; display: inline-block; vertical-align: middle;"> */
 }
