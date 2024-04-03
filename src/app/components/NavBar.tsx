@@ -1,8 +1,11 @@
 import "../styles/navBar.css";
 import { navs } from "../data/data";
+import { useRouter, usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 
 export default function NavBar() {
+  const pathname = usePathname();
+  const router = useRouter();
   const [navList, setNavList] = useState(navs);
   const [open, setOpen] = useState(false);
   const [scroll, setScroll] = useState(0);
@@ -23,9 +26,46 @@ export default function NavBar() {
   };
 
   // TO DO: handleScrollTo function and handleNavActive function
-  const handleScrollTo = (section: string) => {};
+  const handleScrollTo = (section: string) => {
+    const header: HTMLElement = document.querySelector("#header")!;
+    const offset = header.offsetHeight;
+    const targetEl: HTMLElement = document.querySelector("#" + section)!;
+    if (pathname === "/") {
+      const elementPosition = targetEl.offsetTop;
+      window.scrollTo({
+        top: elementPosition - offset,
+        behavior: "smooth",
+      });
+    } else {
+      router.push(`/#${section}`);
+    }
+  };
 
-  const handleNavActive = () => {};
+  const handleNavActive = () => {
+    const position = scroll + 200;
+    // nav add and remove active class
+    setNavList(
+      navList.map((nav) => {
+        nav.active = false;
+        const targetSection: HTMLElement = document.querySelector(
+          "#" + nav.target
+        )!;
+
+        if (
+          targetSection &&
+          position >= targetSection.offsetTop &&
+          position <= targetSection.offsetTop + targetSection.offsetHeight
+        ) {
+          nav.active = true;
+        }
+        return nav;
+      })
+    );
+  };
+
+  useEffect(() => {
+    handleNavActive();
+  }, [scroll]);
 
   return (
     <nav
