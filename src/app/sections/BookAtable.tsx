@@ -10,7 +10,7 @@ export default function BookAtable() {
   const handleTextChange = () => {};
 
   return (
-    <section id="booking" className="booking">
+    <section id="book-a-table" className="book-a-table">
       <div className="container" data-aos="fade-up">
         <SectionTitle title="Reservation" subtitle="Book a Table" />
       </div>

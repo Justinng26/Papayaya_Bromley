@@ -1,12 +1,22 @@
-import "../styles/breadcrumb.css";
+"use client";
+
+import { useRouter } from "next/navigation";
 import Link from "next/link";
+import "../styles/breadcrumb.css";
 
 export default function Breadcrumb({ page }: { page: string }) {
+  const router = useRouter();
+
+  const handleGoBack = () => {
+    router.back();
+  };
   return (
     <section className="breadcrumbs">
       <div className="container">
         <div className="d-flex justify-content-between align-items-center">
-          <h2>{page}</h2>
+          <a onClick={handleGoBack} style={{ cursor: "pointer" }}>
+            <h2>{page}</h2>
+          </a>
 
           <ol>
             <li>
@@ -15,7 +25,9 @@ export default function Breadcrumb({ page }: { page: string }) {
               </Link>
             </li>
 
-            <li>{page}</li>
+            <li onClick={handleGoBack} style={{ cursor: "pointer" }}>
+              {page}
+            </li>
           </ol>
         </div>
       </div>

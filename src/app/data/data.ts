@@ -27,31 +27,39 @@ export const navs = [
 
   {
     id: 5,
+    name: "Book a table",
+    target: "book-a-table",
+    active: false,
+  },
+
+  {
+    id: 6,
     name: "Gallery",
     target: "gallery",
     active: false,
   },
   {
-    id: 6,
+    id: 7,
     name: "Opening Hours",
     target: "opening-hours",
     active: false,
   },
 
   {
-    id: 7,
+    id: 8,
     name: "Testimonials",
     target: "testimonials",
     active: false,
   },
 
   {
-    id: 8,
+    id: 9,
     name: "Contact",
     target: "contact",
     active: false,
   },
 ];
+
 export const whyUs = [
   {
     id: 1,
