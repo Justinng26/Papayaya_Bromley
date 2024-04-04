@@ -39,7 +39,7 @@
 }
 
 .menu .menu-content a:hover {
-  color: #cda45e;
+  color: seagreen;
 }
 
 .menu .menu-content span {
@@ -48,7 +48,7 @@
   z-index: 3;
   padding: 0 10px;
   font-weight: 600;
-  color: #cda45e;
+  color: seagreen;
 }
 
 .menu .menu-ingredients {

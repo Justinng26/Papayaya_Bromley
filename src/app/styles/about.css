@@ -36,8 +36,8 @@
   height: 60px;
   z-index: 1;
   content: "";
-  border-left: 5px solid #cda45e;
-  border-top: 5px solid #cda45e;
+  border-left: 5px solid seagreen;
+  border-top: 5px solid seagreen;
   transition: 0.5s;
 }
 
@@ -49,8 +49,8 @@
   height: 60px;
   z-index: 2;
   content: "";
-  border-right: 5px solid #cda45e;
-  border-bottom: 5px solid #cda45e;
+  border-right: 5px solid seagreen;
+  border-bottom: 5px solid seagreen;
   transition: 0.5s;
 }
 

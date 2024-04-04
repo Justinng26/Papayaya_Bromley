@@ -9,18 +9,18 @@
   height: 44px;
   border-radius: 50px;
   transition: all 0.4s;
-  border: 2px solid #cda45e;
+  border: 2px solid seagreen;
   text-decoration: none;
 }
 
 .back-to-top i {
   font-size: 28px;
-  color: #cda45e;
+  color: seagreen;
   line-height: 0;
 }
 
 .back-to-top:hover {
-  background: #cda45e;
+  background: seagreen;
   color: #1a1814;
 }
 

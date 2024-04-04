@@ -22,7 +22,7 @@
 
 .menu #menu-filters li:hover,
 .menu #menu-filters li.filter-active {
-  color: #cda45e;
+  color: seagreen;
 }
 
 .menu #menu-filter li:last-child {
@@ -43,7 +43,7 @@
   height: 44px;
   font-size: 28px;
   line-height: 1;
-  color: #cda45e;
+  color: seagreen;
   margin: 0 5px; /* Adjust the margin as needed */
   transition: all ease-in-out 0.3s;
   border-radius: 50px;
@@ -55,7 +55,7 @@
 }
 
 .pagination button:hover {
-  background: #cda45e;
+  background: seagreen;
   color: #1a1814;
 }
 

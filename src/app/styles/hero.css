@@ -42,7 +42,7 @@
 }
 
 #hero h1 span {
-  color: #cda45e;
+  color: seagreen;
 }
 
 #hero h2 {
@@ -58,7 +58,7 @@
 #hero .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(#cda45e 50%, rgba(205, 164, 94, 0.4) 52%);
+  background: radial-gradient(seagreen 50%, rgba(205, 164, 94, 0.4) 52%);
   border-radius: 50%;
   display: block;
   position: relative;
@@ -105,7 +105,7 @@
 }
 
 #hero .play-btn:hover::after {
-  border-left: 15px solid #cda45e;
+  border-left: 15px solid seagreen;
   transform: scale(20);
 }
 

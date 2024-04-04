@@ -9,11 +9,11 @@
   transition: 0.3s;
   line-height: 1;
   color: white;
-  border: 2px solid #cda45e;
+  border: 2px solid seagreen;
   cursor: pointer;
 }
 
 #hero .btn-hero:hover {
-  background: #cda45e;
+  background: seagreen;
   color: #fff;
 }

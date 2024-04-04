@@ -9,7 +9,7 @@
   display: block;
   font-size: 28px;
   font-size: 700;
-  color: #cda45e;
+  color: seagreen;
 }
 
 .why-us .box h4 {
@@ -28,7 +28,7 @@
 }
 
 .why-us .box:hover {
-  background: #cda45e;
+  background: seagreen;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba (0, 0, 0, 0.18);
 }

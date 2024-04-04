@@ -41,6 +41,3 @@ export default function Header() {
     </header>
   );
 }
-{
-  /* style="width: 170px; height: 170px; border-radius: 22%; overflow: hidden; display: inline-block; vertical-align: middle;"> */
-}

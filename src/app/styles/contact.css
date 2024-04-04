@@ -7,7 +7,7 @@
   float: left;
   width: 44px;
   height: 44px;
-  background: #cda45e;
+  background: seagreen;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,7 +82,7 @@
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #cda45e;
+  border: 3px solid seagreen;
   border-top-color: #1a1814;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -115,7 +115,7 @@
 
 .contact .contact-form input:focus,
 .contact .contact-form textarea:focus {
-  border-color: #cda45e;
+  border-color: seagreen;
 }
 
 .contact .contact-form input {
@@ -127,7 +127,7 @@
 }
 
 .contact .contact-form button[type="submit"] {
-  background: #cda45e;
+  background: seagreen;
   border: 0;
   padding: 10px 35px;
   color: #fff;

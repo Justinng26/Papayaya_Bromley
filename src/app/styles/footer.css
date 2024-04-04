@@ -50,7 +50,7 @@
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #cda45e;
+  background: seagreen;
   color: #fff;
   text-decoration: none;
 }
@@ -75,7 +75,7 @@
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #cda45e;
+  color: seagreen;
   font-size: 18px;
   line-height: 1;
 }
@@ -98,7 +98,7 @@
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #cda45e;
+  color: seagreen;
 }
 
 #footer .footer-top .download {
@@ -127,5 +127,5 @@
 }
 
 #footer .credits a {
-  color: #cda45e;
+  color: seagreen;
 }

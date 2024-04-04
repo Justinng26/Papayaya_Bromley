@@ -15,8 +15,8 @@
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #1a1814;
-  border-top-color: #cda45e;
-  border-bottom-color: #cda45e;
+  border-top-color: seagreen;
+  border-bottom-color: seagreen;
   border-radius: 50%;
   width: 60px;
   height: 60px;
