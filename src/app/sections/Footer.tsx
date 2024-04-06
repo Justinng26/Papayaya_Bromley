@@ -35,17 +35,17 @@ export default function Footer() {
 
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="#">About us</a>
+                  <a href="/#about">About us</a>
                 </li>
 
                 <li>
                   <i className="bx bx-chevron-right"></i>
-                  <a href="#">Menu</a>
+                  <a href="/#menu">Menu</a>
                 </li>
 
                 <li>
                   <i className="bx bx-chevron-right"></i>
-                  <a href="#">Gallery</a>
+                  <a href="/#gallery">Gallery</a>
                 </li>
               </ul>
             </div>

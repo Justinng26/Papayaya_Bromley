@@ -1,8 +1,39 @@
+"use client";
+
 import SectionTitle from "../components/SectionTitle";
+import {
+  FormControl,
+  FormLabel,
+  Textarea,
+  FormErrorMessage,
+} from "@chakra-ui/react";
+import { useState } from "react";
 import InputBox from "../components/InputBox";
 import "../styles/contact.css";
 
+const initValues = { name: "", email: "", subject: "", message: "" };
+
+const initState = { values: initValues };
+
 export default function Contact() {
+  const [state, setState] = useState(initState);
+  const [touched, setTouched] = useState({});
+  const { values } = state;
+
+  // this function is used to handle the onBlur event. It destructures the target from the event object and sets the touched state to true.
+  const onBlur = ({ target }: any) =>
+    setTouched((prev: any) => ({ ...prev, [target.name]: true }));
+
+  // this function is used to handle the onChange event. It destructures the target from the event object and sets the state to the new value.
+  const handleChange = ({ target }: any) =>
+    setState((prev: any) => ({
+      ...prev,
+      values: {
+        ...prev.values,
+        [target.name]: target.value,
+      },
+    }));
+
   return (
     <section id="contact" className="contact">
       <div className="container" data-aos="fade-up">
@@ -62,7 +93,73 @@ export default function Contact() {
           {/* input section */}
 
           <div className="col-lg-8 mt-5 mt-lg-0">
-            <form role="form" className="contact-form">
+            <FormControl isRequired isInvalid={touched.name && !values.name}>
+              <FormLabel>Name</FormLabel>
+              <InputBox
+                type="text"
+                name="name"
+                errorBorderColor="red.300"
+                value={values.name}
+                onChange={handleChange}
+                className="form-control"
+                placeholder="Your Name"
+                onBlur={onBlur}
+              />
+              <FormErrorMessage>Please enter your name</FormErrorMessage>
+            </FormControl>
+
+            <FormControl isRequired isInvalid={touched.email && !values.email}>
+              <FormLabel>Email</FormLabel>
+              <InputBox
+                type="email"
+                name="email"
+                errorBorderColor="red.300"
+                value={values.email}
+                onChange={handleChange}
+                className="form-control"
+                placeholder="Your Email"
+                onBlur={onBlur}
+              />
+              <FormErrorMessage>Please enter your email</FormErrorMessage>
+            </FormControl>
+
+            <FormControl
+              isRequired
+              isInvalid={touched.subject && !values.subject}
+            >
+              <FormLabel>Subject</FormLabel>
+              <InputBox
+                type="text"
+                name="subject"
+                errorBorderColor="red.300"
+                value={values.subject}
+                onChange={handleChange}
+                className="form-control"
+                placeholder="Subject"
+                onBlur={onBlur}
+              />
+              <FormErrorMessage>Please enter the subject</FormErrorMessage>
+            </FormControl>
+
+            <FormControl
+              isRequired
+              isInvalid={touched.message && !values.message}
+            >
+              <FormLabel>Message</FormLabel>
+              <Textarea
+                // type="text"
+                name="message"
+                rows={4}
+                value={values.message}
+                onChange={handleChange}
+                className="form-control"
+                placeholder="Subject"
+                onBlur={onBlur}
+              />
+              <FormErrorMessage>Please enter your message</FormErrorMessage>
+            </FormControl>
+
+            {/* <form role="form" className="contact-form">
               <div className="row">
                 <div className="col-md-6 form-group">
                   <InputBox
@@ -79,7 +176,7 @@ export default function Contact() {
                     type="email"
                     className="form-control"
                     name="email"
-                    // id="email"
+                    //  id="email"
                     placeholder="Your Email"
                     required
                   />
@@ -118,7 +215,7 @@ export default function Contact() {
               <div className="text-center">
                 <button type="submit">Send Message</button>
               </div>
-            </form>
+            </form> */}
           </div>
         </div>
       </div>
