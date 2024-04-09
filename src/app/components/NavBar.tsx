@@ -2,6 +2,7 @@ import "../styles/navBar.css";
 import { navs } from "../data/data";
 import { useRouter, usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
+import { handleScrollTo } from "../lib/utils";
 
 export default function NavBar() {
   const pathname = usePathname();
@@ -25,21 +26,7 @@ export default function NavBar() {
     setOpen(!open);
   };
 
-  // TO DO: handleScrollTo function and handleNavActive function
-  const handleScrollTo = (section: string) => {
-    const header: HTMLElement = document.querySelector("#header")!;
-    const offset = header.offsetHeight;
-    const targetEl: HTMLElement = document.querySelector("#" + section)!;
-    if (pathname === "/") {
-      const elementPosition = targetEl.offsetTop;
-      window.scrollTo({
-        top: elementPosition - offset,
-        behavior: "smooth",
-      });
-    } else {
-      router.push(`/#${section}`);
-    }
-  };
+  
 
   const handleNavActive = () => {
     const position = scroll + 200;
@@ -79,7 +66,7 @@ export default function NavBar() {
               className={`nav-link scrollto ${
                 nav.active ? "active" : undefined
               }`}
-              onClick={() => handleScrollTo(nav.target)}
+              onClick={() => handleScrollTo(nav.target, pathname, router)}
             >
               {nav.name === "Home" ? (
                 <i className="bi bi-house-door-fill"></i>

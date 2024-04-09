@@ -1,12 +1,12 @@
 "use client";
 
 import SectionTitle from "../components/SectionTitle";
-import {
-  FormControl,
-  FormLabel,
-  Textarea,
-  FormErrorMessage,
-} from "@chakra-ui/react";
+// import {
+//   FormControl,
+//   FormLabel,
+//   Textarea,
+//   FormErrorMessage,
+// } from "@chakra-ui/react";
 import { useState } from "react";
 import InputBox from "../components/InputBox";
 import "../styles/contact.css";
@@ -62,20 +62,6 @@ export default function Contact() {
                 </p>
               </div>
 
-              {/* <div className="open-hours">
-                <i className="bi bi-clock"></i>
-                <h4>Open Hours:</h4>
-                <p>
-                  Tuesday-Sunday:
-                  <br />
-                  11:30 AM - 14:30 PM
-                  <br />
-                  17:00 PM - 22:00 PM
-                  <br />
-                  Monday: Closed
-                </p>
-              </div> */}
-
               <div className="email">
                 <i className="bi bi-envelope"></i>
                 <h4>Email:</h4>
@@ -93,112 +79,51 @@ export default function Contact() {
           {/* input section */}
 
           <div className="col-lg-8 mt-5 mt-lg-0">
-            <FormControl isRequired isInvalid={touched.name && !values.name}>
-              <FormLabel>Name</FormLabel>
-              <InputBox
-                type="text"
-                name="name"
-                errorBorderColor="red.300"
-                value={values.name}
-                onChange={handleChange}
-                className="form-control"
-                placeholder="Your Name"
-                onBlur={onBlur}
-              />
-              <FormErrorMessage>Please enter your name</FormErrorMessage>
-            </FormControl>
-
-            <FormControl isRequired isInvalid={touched.email && !values.email}>
-              <FormLabel>Email</FormLabel>
-              <InputBox
-                type="email"
-                name="email"
-                errorBorderColor="red.300"
-                value={values.email}
-                onChange={handleChange}
-                className="form-control"
-                placeholder="Your Email"
-                onBlur={onBlur}
-              />
-              <FormErrorMessage>Please enter your email</FormErrorMessage>
-            </FormControl>
-
-            <FormControl
-              isRequired
-              isInvalid={touched.subject && !values.subject}
-            >
-              <FormLabel>Subject</FormLabel>
-              <InputBox
-                type="text"
-                name="subject"
-                errorBorderColor="red.300"
-                value={values.subject}
-                onChange={handleChange}
-                className="form-control"
-                placeholder="Subject"
-                onBlur={onBlur}
-              />
-              <FormErrorMessage>Please enter the subject</FormErrorMessage>
-            </FormControl>
-
-            <FormControl
-              isRequired
-              isInvalid={touched.message && !values.message}
-            >
-              <FormLabel>Message</FormLabel>
-              <Textarea
-                // type="text"
-                name="message"
-                rows={4}
-                value={values.message}
-                onChange={handleChange}
-                className="form-control"
-                placeholder="Subject"
-                onBlur={onBlur}
-              />
-              <FormErrorMessage>Please enter your message</FormErrorMessage>
-            </FormControl>
-
-            {/* <form role="form" className="contact-form">
+            {/* CONTACT FORM */}
+            <form role="form" className="contact-form">
               <div className="row">
                 <div className="col-md-6 form-group">
                   <InputBox
                     type="text"
                     name="name"
+                    value={values.name}
+                    onChange={handleChange}
                     className="form-control"
                     placeholder="Your Name"
-                    required
                   />
                 </div>
 
                 <div className="col-md-6 form-group mt-3 mt-md-0">
                   <InputBox
                     type="email"
-                    className="form-control"
                     name="email"
-                    //  id="email"
+                    value={values.email}
+                    onChange={handleChange}
+                    className="form-control"
                     placeholder="Your Email"
-                    required
                   />
                 </div>
 
                 <div className="form-group mt-3">
                   <InputBox
                     type="text"
-                    className="form-control"
                     name="subject"
-                    // id="subject"
+                    value={values.subject}
+                    onChange={handleChange}
+                    className="form-control"
                     placeholder="Subject"
-                    required
                   />
                 </div>
 
                 <div className="form-group mt-3">
                   <textarea
-                    className="form-control"
                     name="message"
-                    rows={8}
-                    placeholder="Message"
+                    rows={4}
+                    value={values.message}
+                    onChange={handleChange}
+                    className="form-control"
+                    placeholder="Subject"
+                    onBlur={onBlur}
                     required
                   ></textarea>
                 </div>
@@ -215,7 +140,7 @@ export default function Contact() {
               <div className="text-center">
                 <button type="submit">Send Message</button>
               </div>
-            </form> */}
+            </form>
           </div>
         </div>
       </div>

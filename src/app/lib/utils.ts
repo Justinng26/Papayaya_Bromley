@@ -1,3 +1,5 @@
+import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
+
 export const validateBooking = (value: unknown, maxLength: number) => {
   if (
     !value ||
@@ -25,4 +27,23 @@ export const getErrorMessage = (error: unknown): string => {
     message = "An unknown error occurred";
   }
   return message;
+};
+
+export const handleScrollTo = (
+  section: string,
+  pathname: string,
+  router: AppRouterInstance
+) => {
+  const header: HTMLElement = document.querySelector("#header")!;
+  const offset = header.offsetHeight;
+  const targetEl: HTMLElement = document.querySelector("#" + section)!;
+  if (pathname === "/") {
+    const elementPosition = targetEl.offsetTop;
+    window.scrollTo({
+      top: elementPosition - offset,
+      behavior: "smooth",
+    });
+  } else {
+    router.push(`/#${section}`);
+  }
 };

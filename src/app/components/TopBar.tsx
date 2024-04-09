@@ -29,7 +29,7 @@ export default function TopBar() {
           </i>
 
           <i className="bi bi-clock d-flex align-items-center ms-4">
-            <span> Tue-Sun: 11:30AM-22:00PM :</span>
+            <span> Tue-Sun: 11:30AM-22:00PM </span>
           </i>
         </div>
       </div>

@@ -30,18 +30,17 @@ export default function About() {
 
             <ul>
               <li>
-                <i className="bi bi-check-circle"></i> Ullamco laboris nisi ut
-                aliquip ex ea commodo consequat.
+                <i className="bi bi-check-circle"></i> Book your parties,
+                birthdays or events with us. We have a private room for hire.
+                Head to the Contact page to get in touch.
               </li>
               <li>
-                <i className="bi bi-check-circle"></i> Duis aute irure dolor in
-                reprehenderit in voluptate velit.
+                <i className="bi bi-check-circle"></i> Vegetarian and Vegan
+                friendly (we have a separate menu for this)
               </li>
               <li>
-                <i className="bi bi-check-circle"></i> Ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate trideta storacalaperda mastiro dolore
-                eu fugiat nulla pariatur.
+                <i className="bi bi-check-circle"></i> Our chicken dishes are
+                Halal.
               </li>
             </ul>
 

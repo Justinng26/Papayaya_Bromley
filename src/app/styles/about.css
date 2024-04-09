@@ -1,5 +1,6 @@
 .about {
-  background: url("../../../public/assets/images/about-bg.jpg") center center;
+  background: url("../../../public/assets/images/events/events-bg.jpg") center
+    center;
   background-size: cover;
   position: relative;
   padding: 80px 0;

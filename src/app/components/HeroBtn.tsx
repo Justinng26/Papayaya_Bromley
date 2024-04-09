@@ -1,5 +1,6 @@
 import { useRouter, usePathname } from "next/navigation";
 import "../styles/heroBtn.css";
+import { handleScrollTo } from "../lib/utils";
 
 export default function HeroBtn({
   name,
@@ -11,24 +12,11 @@ export default function HeroBtn({
   const router = useRouter();
   const pathname = usePathname();
 
-  const handleScrollTo = (section: string) => {
-    const header: HTMLElement = document.querySelector("#header")!;
-    const offset = header.offsetHeight;
-    const targetEl: HTMLElement = document.querySelector("#" + section)!;
-    if (pathname === "/") {
-      const elementPosition = targetEl.offsetTop;
-      window.scrollTo({
-        top: elementPosition - offset,
-        behavior: "smooth",
-      });
-    } else {
-      router.push(`/#${section}`);
-    }
-  };
+  
 
   return (
     <a
-      onClick={() => handleScrollTo(target)}
+      onClick={() => handleScrollTo(target, pathname, router)}
       className={`btn-hero animated fadeInUp scrollto ${name.includes("book") ? "ms-4" : undefined}`}
     >
       {name}

@@ -11,6 +11,7 @@ interface InputBoxProps {
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   maxLength?: number;
   onBlur?: (e: React.FocusEvent<HTMLInputElement>) => void;
+  isInvalid?: boolean;
 }
 
 export default function InputBox({
@@ -24,6 +25,7 @@ export default function InputBox({
   onChange,
   maxLength,
   onBlur,
+  isInvalid,
 }: InputBoxProps) {
   return (
     <input

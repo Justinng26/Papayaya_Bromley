@@ -18,13 +18,18 @@ export const navs = [
     active: false,
   },
 
+  // {
+  //   id: 4,
+  //   name: "Events",
+  //   target: "events",
+  //   active: false,
+  // },
   {
     id: 4,
-    name: "Events",
-    target: "events",
+    name: "Gallery",
+    target: "gallery",
     active: false,
   },
-
   {
     id: 5,
     name: "Book a table",
@@ -34,26 +39,20 @@ export const navs = [
 
   {
     id: 6,
-    name: "Gallery",
-    target: "gallery",
-    active: false,
-  },
-  {
-    id: 7,
     name: "Opening Hours",
     target: "opening-hours",
     active: false,
   },
 
   {
-    id: 8,
+    id: 7,
     name: "Testimonials",
     target: "testimonials",
     active: false,
   },
 
   {
-    id: 9,
+    id: 8,
     name: "Contact",
     target: "contact",
     active: false,
@@ -1407,7 +1406,7 @@ export const gallery = [
   },
   {
     id: 3,
-    image: "/assets/images/gallery/Hero1.jpg",
+    image: "/assets/images/gallery/Papayaya - High Street_hero_2.jpg",
   },
   {
     id: 4,
@@ -1428,5 +1427,24 @@ export const gallery = [
   {
     id: 8,
     image: "/assets/images/gallery/Hero3.jpg",
+  },
+];
+
+export const footer = [
+  { id: 1, name: "Home", target: "hero" },
+  {
+    id: 2,
+    name: "About",
+    target: "about",
+  },
+  {
+    id: 3,
+    name: "Menu",
+    target: "menu",
+  },
+  {
+    id: 4,
+    name: "Gallery",
+    target: "gallery",
   },
 ];

@@ -1,6 +1,15 @@
+"use client"
+
+import { footer } from "../data/data";
+import { useRouter, usePathname } from "next/navigation";
+import { useState } from "react";
+import { handleScrollTo } from "../lib/utils"
 import "../styles/footer.css";
 
 export default function Footer() {
+  const router = useRouter();
+  const pathname = usePathname();
+  const [footerList, setFooterList] = useState(footer);
   return (
     <footer id="footer">
       <div className="footer-top">
@@ -28,25 +37,16 @@ export default function Footer() {
             <div className="col-lg-2 col-md-6 footer-links">
               <h4>Useful Links</h4>
               <ul>
-                <li>
-                  <i className="bx bx-chevron-right"></i>
-                  <a href="#">Home</a>
-                </li>
-
-                <li>
-                  <i className="bx bx-chevron-right"></i>{" "}
-                  <a href="/#about">About us</a>
-                </li>
-
-                <li>
-                  <i className="bx bx-chevron-right"></i>
-                  <a href="/#menu">Menu</a>
-                </li>
-
-                <li>
-                  <i className="bx bx-chevron-right"></i>
-                  <a href="/#gallery">Gallery</a>
-                </li>
+                {footerList.map((footer) => (
+                  <li key={footer.id}>
+                    <i className="bx bx-chevron-right"></i>
+                    <a
+                      
+                      onClick={() => handleScrollTo(footer.target, pathname, router)}>
+                      {footer.name}
+                      </a>
+                  </li>
+                ))}
               </ul>
             </div>
 
