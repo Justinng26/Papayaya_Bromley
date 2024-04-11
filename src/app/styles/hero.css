@@ -49,10 +49,11 @@
   color: #eee;
   margin-bottom: 10px 0 0 0;
   font-size: 2rem;
+  padding-top: 24px;
 }
 
 #hero .btns {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 #hero .play-btn {

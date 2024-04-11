@@ -1,15 +1,18 @@
-"use client"
+"use client";
 
 import { footer } from "../data/data";
 import { useRouter, usePathname } from "next/navigation";
-import { useState } from "react";
-import { handleScrollTo } from "../lib/utils"
+
+import { handleScrollTo } from "../lib/utils";
+import googlePlayBadge from "../../../public/assets/images/google-play-badge.png";
+import appStoreBadge from "../../../public/assets/images/app-store-badge.png";
+import Image from "next/image";
 import "../styles/footer.css";
 
 export default function Footer() {
   const router = useRouter();
   const pathname = usePathname();
-  const [footerList, setFooterList] = useState(footer);
+
   return (
     <footer id="footer">
       <div className="footer-top">
@@ -17,7 +20,7 @@ export default function Footer() {
           <div className="row">
             <div className="col-lg-3 col-md-6">
               <div className="footer-info">
-                <h3>Papayaya</h3>
+                <h4>Papayaya</h4>
                 <p>
                   49 High Street, <br />
                   Bromley, BR1 1LE
@@ -37,14 +40,16 @@ export default function Footer() {
             <div className="col-lg-2 col-md-6 footer-links">
               <h4>Useful Links</h4>
               <ul>
-                {footerList.map((footer) => (
-                  <li key={footer.id}>
+                {footer.map((item) => (
+                  <li key={item.id}>
                     <i className="bx bx-chevron-right"></i>
                     <a
-                      
-                      onClick={() => handleScrollTo(footer.target, pathname, router)}>
-                      {footer.name}
-                      </a>
+                      onClick={() =>
+                        handleScrollTo(item.target, pathname, router)
+                      }
+                    >
+                      {item.name}
+                    </a>
                   </li>
                 ))}
               </ul>
@@ -76,16 +81,23 @@ export default function Footer() {
               <h4>Download our app </h4>
               <div className="download">
                 <a href="https://apps.apple.com/gb/app/papayaya/id1447042589?itsct=apps_box_badge&amp;itscg=30200">
-                  <img
-                    src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1545004800"
+                  <Image
+                    width={175}
+                    height={150}
+                    // src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1545004800"
                     alt="Download on the App Store"
+                    src={appStoreBadge}
                   />
                 </a>
 
                 <a href="https://play.google.com/store/apps/details?id=uk.co.my_orders.papayaya&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
-                  <img
+                  <Image
+                    width={175}
+                    height={150}
+                    className="google-play-badge"
                     alt="Get it on Google Play"
-                    src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                    // src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                    src={googlePlayBadge}
                   />
                 </a>
               </div>

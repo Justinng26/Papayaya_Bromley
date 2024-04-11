@@ -7,6 +7,9 @@ import { sendBooking } from "../actions/sendBooking";
 import SubmitBtn from "../components/SubmitBtn";
 
 export default function BookAtable() {
+  const isPastDay = (day: Date) => {
+    return day < new Date();
+  };
   const handleTextChange = () => {};
 
   return (
@@ -73,13 +76,14 @@ export default function BookAtable() {
           </div>
 
           <div className="col-lg-4 col-md-6 form-group mt-3">
-            <InputBox
+            <input
               type="date"
               className="form-control"
               name="date"
               //   value={text.date}
               placeholder="Date"
               required
+              disabled={isPastDay(new Date())}
               onChange={handleTextChange}
             />
           </div>

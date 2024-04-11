@@ -1371,7 +1371,7 @@ export const testimonials = [
   },
   {
     id: 3,
-    content: `"This place is quite near to my home so was always on the list. We went for dinnfer and ordered their vegetarian snacks platter, chilli Singapore Noodles and Thai Green curry. Everything was perfect to the taste and was also presented properly and served timely. The staff was polite and responsive. The place can be more cosy, but the food was just so perfect. We would surely go back again." - `,
+    content: `"This place is quite near to my home so was always on the list. We went for dinner and ordered their vegetarian snacks platter, chilli Singapore Noodles and Thai Green curry. Everything was perfect to the taste and was also presented properly and served timely. The staff was polite and responsive. The place can be more cosy, but the food was just so perfect. We would surely go back again." - `,
     avatar: "./assets/images/testimonials/Review-3.png",
     client: "Vaibhav Malhotra",
     position: "Local Guide",

@@ -7,32 +7,36 @@ import SectionTitle from "../components/SectionTitle";
 //   Textarea,
 //   FormErrorMessage,
 // } from "@chakra-ui/react";
-import { useState } from "react";
+import { useState, FormEvent } from "react";
 import InputBox from "../components/InputBox";
+import { toast } from "react-hot-toast";
+
 import "../styles/contact.css";
 
-const initValues = { name: "", email: "", subject: "", message: "" };
-
-const initState = { values: initValues };
-
 export default function Contact() {
-  const [state, setState] = useState(initState);
-  const [touched, setTouched] = useState({});
-  const { values } = state;
+  const [data, setData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
 
-  // this function is used to handle the onBlur event. It destructures the target from the event object and sets the touched state to true.
-  const onBlur = ({ target }: any) =>
-    setTouched((prev: any) => ({ ...prev, [target.name]: true }));
-
-  // this function is used to handle the onChange event. It destructures the target from the event object and sets the state to the new value.
-  const handleChange = ({ target }: any) =>
-    setState((prev: any) => ({
-      ...prev,
-      values: {
-        ...prev.values,
-        [target.name]: target.value,
+  const sendEmail = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const response = await fetch("../api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
       },
-    }));
+      body: JSON.stringify(data),
+    });
+
+    if (response.status === 200) {
+      console.log("Email sent successfully");
+      setData({ name: "", email: "", subject: "", message: "" }); // clear the form
+      toast.success(`Hey ${data.name}, your message has been sent!`);
+    }
+  };
 
   return (
     <section id="contact" className="contact">
@@ -80,14 +84,14 @@ export default function Contact() {
 
           <div className="col-lg-8 mt-5 mt-lg-0">
             {/* CONTACT FORM */}
-            <form role="form" className="contact-form">
+            <form onSubmit={sendEmail} className="contact-form">
               <div className="row">
                 <div className="col-md-6 form-group">
                   <InputBox
+                    required
                     type="text"
-                    name="name"
-                    value={values.name}
-                    onChange={handleChange}
+                    value={data.name}
+                    onChange={(e) => setData({ ...data, name: e.target.value })}
                     className="form-control"
                     placeholder="Your Name"
                   />
@@ -95,10 +99,12 @@ export default function Contact() {
 
                 <div className="col-md-6 form-group mt-3 mt-md-0">
                   <InputBox
+                    required
                     type="email"
-                    name="email"
-                    value={values.email}
-                    onChange={handleChange}
+                    value={data.email}
+                    onChange={(e) =>
+                      setData({ ...data, email: e.target.value })
+                    }
                     className="form-control"
                     placeholder="Your Email"
                   />
@@ -106,10 +112,12 @@ export default function Contact() {
 
                 <div className="form-group mt-3">
                   <InputBox
+                    required
                     type="text"
-                    name="subject"
-                    value={values.subject}
-                    onChange={handleChange}
+                    value={data.subject}
+                    onChange={(e) =>
+                      setData({ ...data, subject: e.target.value })
+                    }
                     className="form-control"
                     placeholder="Subject"
                   />
@@ -117,23 +125,14 @@ export default function Contact() {
 
                 <div className="form-group mt-3">
                   <textarea
-                    name="message"
-                    rows={4}
-                    value={values.message}
-                    onChange={handleChange}
                     className="form-control"
-                    placeholder="Subject"
-                    onBlur={onBlur}
-                    required
+                    rows={4}
+                    value={data.message}
+                    onChange={(e) =>
+                      setData({ ...data, message: e.target.value })
+                    }
+                    placeholder="Message"
                   ></textarea>
-                </div>
-
-                <div className="my-3">
-                  <div className="loading">Loading</div>
-                  <div className="error-message"></div>
-                  <div className="sent-message">
-                    Your message has been sent. Thank you!
-                  </div>
                 </div>
               </div>
 

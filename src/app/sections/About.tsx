@@ -32,11 +32,11 @@ export default function About() {
               <li>
                 <i className="bi bi-check-circle"></i> Book your parties,
                 birthdays or events with us. We have a private room for hire.
-                Head to the Contact page to get in touch.
+                Head to the contact page to get in touch.
               </li>
               <li>
                 <i className="bi bi-check-circle"></i> Vegetarian and Vegan
-                friendly (we have a separate menu for this)
+                friendly (we have a separate menu for this).
               </li>
               <li>
                 <i className="bi bi-check-circle"></i> Our chicken dishes are

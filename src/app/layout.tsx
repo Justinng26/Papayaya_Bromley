@@ -18,6 +18,7 @@ import TopBar from "./components/TopBar";
 import Header from "./components/Header";
 import BackToTopBtn from "./components/BackToTopBtn";
 import Footer from "./sections/Footer";
+import { Toaster } from "react-hot-toast";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -40,6 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={playfair.className}>
+        <Toaster position="bottom-right" toastOptions={{ duration: 3000 }} />
         <TopBar />
         <Header />
         {/* <ChakraProvider> */}

@@ -47,6 +47,7 @@
   width: 60px;
   height: 60px;
   transition: 0.3s;
+  margin-top: -6px;
 }
 
 #footer .footer-top .social-links a:hover {
@@ -112,8 +113,7 @@
   overflow: hidden;
   border-radius: 13px;
   margin-right: 10px;
-  height: 85px;
-  width: 170px;
+  margin-top: -50px;
 }
 
 #footer .copyright {
