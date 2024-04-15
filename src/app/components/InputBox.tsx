@@ -2,7 +2,6 @@ import React from "react";
 
 interface InputBoxProps {
   type: string;
-  // name: string;
   className: string;
   value: string;
   placeholder: string;
@@ -13,8 +12,6 @@ interface InputBoxProps {
 
 export default function InputBox({
   type,
-  // name,
-
   className,
   value,
   placeholder,

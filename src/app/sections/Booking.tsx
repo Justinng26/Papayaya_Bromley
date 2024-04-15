@@ -1,12 +1,14 @@
 "use client";
 
-import { useState } from "react";
-import "../styles/booking.css";
+import { useState, FormEvent } from "react";
+
 import SectionTitle from "../components/SectionTitle";
 import InputBox from "../components/InputBox";
+import { toast } from "react-hot-toast";
+import "../styles/booking.css";
 
 export default function Booking() {
-  const initialState = {
+  const [data, setData] = useState({
     name: "",
     email: "",
     phone: "",
@@ -14,48 +16,32 @@ export default function Booking() {
     time: "",
     people: "",
     message: "",
-    validate: "",
-  };
+  });
 
-  const [text, setText] = useState(initialState);
-
-  // This function will handle the input change by updating the state of the text.
-  const handleTextChange = (e: Event | any) => {
-    const { name, value } = e.target;
-    setText({ ...text, [name]: value, validate: "" });
-  };
-
-  const handleSubmitBooking = async (e: Event | any) => {
+  const sendBooking = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (
-      text.name === "" ||
-      text.email === "" ||
-      text.date === "" ||
-      text.time === ""
-    ) {
-      setText({ ...text, validate: "Please fill in the required fields" });
-    }
+    const response = await fetch("../api/booking", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
 
-    // post request to the server
-    try {
-      const response = await fetch("http://localhost:3000/api/booking", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(text),
-      });
-
-      setText({ ...text, validate: "loading" });
-
-      const result = await response.json();
-      if (result) {
-        setText({ ...text, validate: "success" });
-        // console.log('Success', result);
-      }
-    } catch (error) {
-      setText({ ...text, validate: "error" });
-      // console.error('Error:', error);
+    if (response.status === 200) {
+      console.log("Email sent successfully");
+      setData({
+        name: "",
+        email: "",
+        phone: "",
+        date: "",
+        time: "",
+        people: "",
+        message: "",
+      }); // clear the form
+      toast.success(
+        `Hey ${data.name}, your booking request has been sent, we will contact you to confirm!`
+      );
     }
   };
 
@@ -65,7 +51,7 @@ export default function Booking() {
         <SectionTitle title="Reservation" subtitle="Book a Table" />
 
         <form
-          onSubmit={handleSubmitBooking}
+          onSubmit={sendBooking}
           className="booking-form"
           data-aos="fade-up"
           data-aos-delay="100"
@@ -73,73 +59,72 @@ export default function Booking() {
           <div className="row">
             <div className="col-lg-4 col-md-6 form-group">
               <InputBox
+                required
                 type="text"
-                name="name"
+                value={data.name}
+                onChange={(e) => setData({ ...data, name: e.target.value })}
                 className="form-control"
-                value={text.name}
                 placeholder="Your Name"
-                required
-                onChange={handleTextChange}
+                maxLength={50}
               />
             </div>
 
             <div className="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
               <InputBox
+                required
                 type="email"
+                value={data.email}
+                onChange={(e) => setData({ ...data, email: e.target.value })}
                 className="form-control"
-                name="email"
-                value={text.email}
                 placeholder="Your Email"
-                required
-                onChange={handleTextChange}
+                maxLength={50}
               />
             </div>
 
             <div className="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
               <InputBox
+                required
                 type="text"
+                value={data.phone}
+                onChange={(e) => setData({ ...data, phone: e.target.value })}
                 className="form-control"
-                name="phone"
-                value={text.phone}
-                placeholder="Your Phone"
-                required
-                onChange={handleTextChange}
+                placeholder="Your phone number"
+                maxLength={50}
               />
             </div>
 
             <div className="col-lg-4 col-md-6 form-group mt-3">
               <InputBox
+                required
                 type="date"
+                value={data.date}
+                onChange={(e) => setData({ ...data, date: e.target.value })}
                 className="form-control"
-                name="date"
-                value={text.date}
                 placeholder="Date"
-                required
-                onChange={handleTextChange}
+                maxLength={50}
               />
             </div>
 
             <div className="col-lg-4 col-md-6 form-group mt-3">
               <InputBox
+                required
                 type="time"
+                value={data.time}
+                onChange={(e) => setData({ ...data, time: e.target.value })}
                 className="form-control"
-                name="time"
-                value={text.time}
                 placeholder="Time"
-                required
-                onChange={handleTextChange}
               />
             </div>
 
             <div className="col-lg-4 col-md-6 form-group mt-3">
               <InputBox
-                type="number"
-                className="form-control"
-                name="people"
-                value={text.people}
-                placeholder="Number of People"
                 required
-                onChange={handleTextChange}
+                type="number"
+                value={data.people}
+                onChange={(e) => setData({ ...data, people: e.target.value })}
+                className="form-control"
+                placeholder="no. of people"
+                maxLength={50}
               />
             </div>
           </div>
@@ -147,37 +132,14 @@ export default function Booking() {
           <div className="form-group mt-3">
             <textarea
               className="form-control"
-              name="message"
               rows={5}
-              placeholder="Message (Optional)"
-              value={text.message}
-              onChange={handleTextChange}
-              maxLength={5000}
+              value={data.message}
+              onChange={(e) => setData({ ...data, message: e.target.value })}
+              placeholder="Message"
+              required
+              maxLength={300}
             ></textarea>
           </div>
-
-          <div className="mb-3">
-            {text.validate === "loading" && (
-              <div className="loading">Send Booking</div>
-            )}
-            {text.validate === "incomplete" && (
-              <div className="error-message">
-                Please fill in the required fields
-              </div>
-            )}
-            {text.validate === "success" && (
-              <div className="sent-message">
-                Your booking request was sent. We will call back or send an
-                Email to confirm your reservation. Thank you!
-              </div>
-            )}
-            {text.validate === "error" && (
-              <div className="error-message">
-                There was an error while sending your booking request
-              </div>
-            )}
-          </div>
-
           <div className="text-center">
             <button type="submit">Book a Table</button>
           </div>

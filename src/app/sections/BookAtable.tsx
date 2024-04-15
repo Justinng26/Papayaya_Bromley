@@ -5,6 +5,7 @@ import SectionTitle from "../components/SectionTitle";
 import InputBox from "../components/InputBox";
 import { sendBooking } from "../actions/sendBooking";
 import SubmitBtn from "../components/SubmitBtn";
+import "../styles/booking.css";
 
 export default function BookAtable() {
   const isPastDay = (day: Date) => {

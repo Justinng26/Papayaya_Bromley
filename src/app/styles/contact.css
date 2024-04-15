@@ -44,30 +44,13 @@
   padding-bottom: 8px;
 }
 
-.contact .contact-form .validate {
+/* .contact .contact-form .validate {
   display: none;
   color: #ea5c5c;
   margin: 0 0 15px 0;
   font-weight: 400;
   font-size: 13px;
-}
-
-.contact .contact-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: center;
-  font-weight: 600;
-}
-
-.contact .contact-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
+} */
 
 .contact .contact-form .loading {
   display: none;
@@ -136,7 +119,7 @@
 }
 
 .contact .contact-form button[type="submit"]:hover {
-  background: #d3af71;
+  background: slategrey;
 }
 
 @-webkit-keyframes animate-loading {

@@ -2,7 +2,7 @@
 
 import { Resend } from "resend";
 import { validateBooking, getErrorMessage } from "../lib/utils";
-import BookingFormEmail from "../email/BookingFormEmail";
+import BookingFormEmail from "../components/BookingFormEmail";
 import React from "react";
 
 const resend = new Resend(process.env.BOOKING_API_KEY);

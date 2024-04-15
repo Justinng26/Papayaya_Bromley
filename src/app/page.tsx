@@ -3,13 +3,13 @@ import Hero from "./sections/Hero";
 // import WhyUs from "./sections/WhyUs";
 import Menu from "./sections/Menu";
 // import Events from "./sections/Events";
-import BookAtable from "./sections/BookAtable";
+// import BookAtable from "./sections/BookAtable";
 import Testimonials from "./sections/Testimonials";
 import Gallery from "./sections/Gallery";
 import OpeningHours from "./sections/OpeningHours";
 import Contact from "./sections/Contact";
 
-// import Booking from "./sections/Booking";
+import Booking from "./sections/Booking";
 
 export default function Home() {
   return (
@@ -20,10 +20,10 @@ export default function Home() {
         {/* <WhyUs /> */}
         <Menu />
         {/* <Events /> */}
-        {/* <Booking /> */}
 
         <Gallery />
-        <BookAtable />
+        <Booking />
+        {/* <BookAtable /> */}
         <OpeningHours />
         <Testimonials />
         <Contact />

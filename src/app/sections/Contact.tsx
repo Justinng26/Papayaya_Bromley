@@ -1,12 +1,6 @@
 "use client";
 
 import SectionTitle from "../components/SectionTitle";
-// import {
-//   FormControl,
-//   FormLabel,
-//   Textarea,
-//   FormErrorMessage,
-// } from "@chakra-ui/react";
 import { useState, FormEvent } from "react";
 import InputBox from "../components/InputBox";
 import { toast } from "react-hot-toast";
@@ -83,7 +77,6 @@ export default function Contact() {
           {/* input section */}
 
           <div className="col-lg-8 mt-5 mt-lg-0">
-            {/* CONTACT FORM */}
             <form onSubmit={sendEmail} className="contact-form">
               <div className="row">
                 <div className="col-md-6 form-group">
@@ -94,6 +87,7 @@ export default function Contact() {
                     onChange={(e) => setData({ ...data, name: e.target.value })}
                     className="form-control"
                     placeholder="Your Name"
+                    maxLength={50}
                   />
                 </div>
 
@@ -107,6 +101,7 @@ export default function Contact() {
                     }
                     className="form-control"
                     placeholder="Your Email"
+                    maxLength={50}
                   />
                 </div>
 
@@ -120,6 +115,7 @@ export default function Contact() {
                     }
                     className="form-control"
                     placeholder="Subject"
+                    maxLength={100}
                   />
                 </div>
 
@@ -132,6 +128,8 @@ export default function Contact() {
                       setData({ ...data, message: e.target.value })
                     }
                     placeholder="Message"
+                    required
+                    maxLength={300}
                   ></textarea>
                 </div>
               </div>
