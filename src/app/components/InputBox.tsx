@@ -8,6 +8,7 @@ interface InputBoxProps {
   required?: boolean;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   maxLength?: number;
+  children?: React.ReactNode;
 }
 
 export default function InputBox({
@@ -28,7 +29,7 @@ export default function InputBox({
       placeholder={placeholder}
       required={required}
       onChange={onChange}
-      maxLength={300}
+      maxLength={maxLength}
     />
   );
 }

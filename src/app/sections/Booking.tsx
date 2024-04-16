@@ -45,6 +45,72 @@ export default function Booking() {
     }
   };
 
+  // Function to generate array of dates
+  const generateDates = () => {
+    const dates = [];
+    const currentDate = new Date();
+    const daysInMonth = new Date(
+      currentDate.getFullYear(),
+      currentDate.getMonth() + 1,
+      0
+    ).getDate();
+
+    for (let i = 1; i <= daysInMonth; i++) {
+      const date = new Date(
+        currentDate.getFullYear(),
+        currentDate.getMonth(),
+        i
+      );
+      // Exclude Mondays and past dates
+      if (date.getDay() !== 1 && date >= currentDate) {
+        dates.push(date.toISOString().split("T")[0]);
+      }
+    }
+
+    return dates;
+  };
+
+  const availableDates = generateDates();
+
+  // Function to generate array of times
+  const generateTimes = () => {
+    const times = [];
+    // Start and end times
+    const startTime = 12; // 12: PM
+    const endTime = 21; // 9:00 PM
+    // Interval (in minutes) between each time slot
+    const interval = 30; // 30 minutes
+
+    for (let hour = startTime; hour <= endTime; hour++) {
+      for (let minute = 0; minute < 60; minute += interval) {
+        // Exclude certain times (e.g., lunch break from 14:00 to 17:00)
+        if (
+          !(
+            (
+              (hour === 14 && minute >= 0) || // Between 14:00 and 14:30
+              (hour === 15 && minute === 0) || // 15:00
+              (hour === 15 && minute === 30) || // 15:30
+              (hour === 16 && minute === 0) || // 16:00
+              (hour === 16 && minute === 30) ||
+              (hour === 21 && minute === 30)
+            ) // 21:30
+          )
+        ) {
+          // Format hour and minute strings
+          const hourStr = hour < 10 ? `0${hour}` : `${hour}`;
+          const minuteStr = minute === 0 ? "00" : `${minute}`;
+          // Create time string
+          const time = `${hourStr}:${minuteStr}`;
+          times.push(time);
+        }
+      }
+    }
+
+    return times;
+  };
+
+  const availableTimes = generateTimes();
+
   return (
     <section id="book-a-table" className="book-a-table">
       <div className="container" data-aos="fade-up">
@@ -101,19 +167,31 @@ export default function Booking() {
                 onChange={(e) => setData({ ...data, date: e.target.value })}
                 className="form-control"
                 placeholder="Date"
-                maxLength={50}
               />
             </div>
 
             <div className="col-lg-4 col-md-6 form-group mt-3">
-              <InputBox
+              {/* <InputBox
                 required
                 type="time"
                 value={data.time}
                 onChange={(e) => setData({ ...data, time: e.target.value })}
                 className="form-control"
                 placeholder="Time"
-              />
+              /> */}
+              <select
+                required
+                value={data.time}
+                onChange={(e) => setData({ ...data, time: e.target.value })}
+                className="form-control"
+              >
+                <option value="">Select Time</option>
+                {availableTimes.map((time, index) => (
+                  <option key={index} value={time}>
+                    {time}
+                  </option>
+                ))}
+              </select>
             </div>
 
             <div className="col-lg-4 col-md-6 form-group mt-3">
@@ -136,7 +214,6 @@ export default function Booking() {
               value={data.message}
               onChange={(e) => setData({ ...data, message: e.target.value })}
               placeholder="Message"
-              required
               maxLength={300}
             ></textarea>
           </div>
