@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, FormEvent } from "react";
-
 import SectionTitle from "../components/SectionTitle";
 import InputBox from "../components/InputBox";
 import { toast } from "react-hot-toast";
@@ -40,7 +39,10 @@ export default function Booking() {
         message: "",
       }); // clear the form
       toast.success(
-        `Hey ${data.name}, your booking request has been sent, we will contact you to confirm!`
+        `Hey ${data.name}, your booking request has been sent, we will contact you to confirm!`,
+        {
+          duration: 3000, // Duration in milliseconds (e.g., 5000 milliseconds = 3 seconds)
+        }
       );
     }
   };
@@ -49,6 +51,8 @@ export default function Booking() {
   const generateDates = () => {
     const dates = [];
     const currentDate = new Date();
+    const currentYear = currentDate.getFullYear();
+    const currentMonth = currentDate.getMonth();
     const daysInMonth = new Date(
       currentDate.getFullYear(),
       currentDate.getMonth() + 1,
@@ -62,7 +66,20 @@ export default function Booking() {
         i
       );
       // Exclude Mondays and past dates
-      if (date.getDay() !== 1 && date >= currentDate) {
+      if (date.getDay() !== 2 && date >= currentDate) {
+        dates.push(date.toISOString().split("T")[0]);
+      }
+    }
+
+    // Check for the next month
+    const nextMonth = currentMonth === 11 ? 0 : currentMonth + 1;
+    const nextYear = currentMonth === 11 ? currentYear + 1 : currentYear;
+    const daysInNextMonth = new Date(nextYear, nextMonth + 1, 0).getDate();
+
+    for (let i = 1; i <= daysInNextMonth; i++) {
+      const date = new Date(nextYear, nextMonth, i);
+      // Exclude Mondays
+      if (date.getDay() !== 2) {
         dates.push(date.toISOString().split("T")[0]);
       }
     }
@@ -155,30 +172,35 @@ export default function Booking() {
                 onChange={(e) => setData({ ...data, phone: e.target.value })}
                 className="form-control"
                 placeholder="Your phone number"
-                maxLength={50}
-              />
-            </div>
-
-            <div className="col-lg-4 col-md-6 form-group mt-3">
-              <InputBox
-                required
-                type="date"
-                value={data.date}
-                onChange={(e) => setData({ ...data, date: e.target.value })}
-                className="form-control"
-                placeholder="Date"
+                maxLength={20}
               />
             </div>
 
             <div className="col-lg-4 col-md-6 form-group mt-3">
               {/* <InputBox
                 required
-                type="time"
-                value={data.time}
-                onChange={(e) => setData({ ...data, time: e.target.value })}
+                type="date"
+                value={data.date}
+                onChange={(e) => setData({ ...data, date: e.target.value })}
                 className="form-control"
-                placeholder="Time"
+                placeholder="Date"
               /> */}
+              <select
+                required
+                value={data.date}
+                onChange={(e) => setData({ ...data, date: e.target.value })}
+                className="form-control"
+              >
+                <option value="">Select Date</option>
+                {availableDates.map((date, index) => (
+                  <option key={index} value={date}>
+                    {date}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <div className="col-lg-4 col-md-6 form-group mt-3">
               <select
                 required
                 value={data.time}
@@ -201,8 +223,8 @@ export default function Booking() {
                 value={data.people}
                 onChange={(e) => setData({ ...data, people: e.target.value })}
                 className="form-control"
-                placeholder="no. of people"
-                maxLength={50}
+                placeholder="No. of people"
+                maxLength={3}
               />
             </div>
           </div>

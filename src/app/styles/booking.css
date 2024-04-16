@@ -45,13 +45,14 @@
 }
 
 .book-a-table .booking-form input,
-.book-a-table .booking-form textarea {
+.book-a-table .booking-form textarea,
+.book-a-table .booking-form select {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
   background: #0c0b09;
   border-color: #625b4b;
-  color: white;
+  color: darkgray;
 }
 
 ::-webkit-calender-picker-indicator {
@@ -79,11 +80,13 @@
 }
 
 .book-a-table .booking-form input:focus,
-.book-a-table .booking-form textarea:focus {
+.book-a-table .booking-form textarea:focus,
+.book-a-table .booking-form select:focus {
   border-color: seagreen;
 }
 
-.book-a-table .booking-form input {
+.book-a-table .booking-form input,
+.book-a-table .booking-form select {
   height: 44px;
 }
 

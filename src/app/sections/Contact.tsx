@@ -129,7 +129,7 @@ export default function Contact() {
                     }
                     placeholder="Message"
                     required
-                    maxLength={300}
+                    maxLength={500}
                   ></textarea>
                 </div>
               </div>

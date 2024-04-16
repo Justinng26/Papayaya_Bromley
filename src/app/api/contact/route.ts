@@ -10,7 +10,7 @@ export async function POST(request: Request) {
     const { name, email, subject, message } = body;
     const { data, error } = await resend.emails.send({
       from: "Acme <onboarding@resend.dev>",
-      to: "justinng878@gmail.com",
+      to: "justinng878@gmail.com", // change to dynamic email address
       subject,
       reply_to: email,
       react: EmailTemplate({ firstName: name }),
