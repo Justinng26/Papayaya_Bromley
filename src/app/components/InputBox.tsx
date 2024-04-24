@@ -8,7 +8,7 @@ interface InputBoxProps {
   required?: boolean;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   maxLength?: number;
-  children?: React.ReactNode;
+  // children?: React.ReactNode;
 }
 
 export default function InputBox({
@@ -23,7 +23,6 @@ export default function InputBox({
   return (
     <input
       type={type}
-      // name={name}
       className="form-control"
       value={value}
       placeholder={placeholder}

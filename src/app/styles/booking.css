@@ -92,6 +92,7 @@
 
 .book-a-table .booking-form textarea {
   padding: 10px 12px;
+  margin-bottom: 12px;
 }
 
 .book-a-table .booking-form button[type="submit"] {
@@ -104,5 +105,5 @@
 }
 
 .book-a-table .booking-form button[type="submit"]:hover {
-  background: slategrey;
+  color: #1a1814;
 }

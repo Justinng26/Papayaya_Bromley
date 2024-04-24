@@ -41,7 +41,7 @@ export default function Booking() {
       toast.success(
         `Hey ${data.name}, your booking request has been sent, we will contact you to confirm!`,
         {
-          duration: 3000, // Duration in milliseconds (e.g., 5000 milliseconds = 3 seconds)
+          duration: 5000, // Duration in milliseconds (e.g., 5000 milliseconds = 5 seconds)
         }
       );
     }
@@ -217,15 +217,29 @@ export default function Booking() {
             </div>
 
             <div className="col-lg-4 col-md-6 form-group mt-3">
-              <InputBox
+              {/* <InputBox
                 required
                 type="number"
                 value={data.people}
                 onChange={(e) => setData({ ...data, people: e.target.value })}
                 className="form-control"
                 placeholder="No. of people"
-                maxLength={3}
-              />
+                maxLength={2}
+                max={10}
+              /> */}
+              <select
+                required
+                value={data.people}
+                onChange={(e) => setData({ ...data, people: e.target.value })}
+                className="form-control"
+              >
+                <option value="">No. of People</option>
+                {[...Array(13)].map((_, num) => (
+                  <option key={num} value={num}>
+                    {num}
+                  </option>
+                ))}
+              </select>
             </div>
           </div>
 

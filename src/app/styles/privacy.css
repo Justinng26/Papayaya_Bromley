@@ -1,0 +1,43 @@
+#main {
+  background: #1a1814;
+}
+
+.privacy {
+  margin-top: 115px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.privacy h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: seagreen;
+}
+
+.privacy h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.privacy h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: seagreen;
+}
+
+.privacy h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.privacy ul {
+  padding: 0;
+}
+
+.privacy ul li {
+  padding-bottom: 10px;
+}

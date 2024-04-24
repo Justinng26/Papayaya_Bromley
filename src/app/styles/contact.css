@@ -107,6 +107,7 @@
 
 .contact .contact-form textarea {
   padding: 10px 12px;
+  margin-bottom: 12px;
 }
 
 .contact .contact-form button[type="submit"] {
@@ -119,7 +120,7 @@
 }
 
 .contact .contact-form button[type="submit"]:hover {
-  background: slategrey;
+  color: #1a1814;
 }
 
 @-webkit-keyframes animate-loading {

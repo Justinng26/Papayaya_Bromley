@@ -37,6 +37,7 @@ export const handleScrollTo = (
   const header: HTMLElement = document.querySelector("#header")!;
   const offset = header.offsetHeight;
   const targetEl: HTMLElement = document.querySelector("#" + section)!;
+
   if (pathname === "/") {
     const elementPosition = targetEl.offsetTop;
     window.scrollTo({
@@ -44,6 +45,6 @@ export const handleScrollTo = (
       behavior: "smooth",
     });
   } else {
-    router.push(`/#${section}`);
+    router.push("/#" + section);
   }
 };

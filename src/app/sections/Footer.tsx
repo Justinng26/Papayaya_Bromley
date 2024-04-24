@@ -2,7 +2,7 @@
 
 import { footer } from "../data/data";
 import { useRouter, usePathname } from "next/navigation";
-
+import Link from "next/link";
 import { handleScrollTo } from "../lib/utils";
 import googlePlayBadge from "../../../public/assets/images/google-play-badge.png";
 import appStoreBadge from "../../../public/assets/images/app-store-badge.png";
@@ -56,7 +56,6 @@ export default function Footer() {
             </div>
 
             {/* follow and review us */}
-
             <div className="col-lg-3 col-md-6 footer-links">
               <h4>Follow and review us</h4>
               <div className="social-links mt-3">
@@ -107,12 +106,18 @@ export default function Footer() {
       </div>
 
       <div className="container">
-        <div className="copyright">
-          &copy;
-          <strong>2023 My Orders Ltd.</strong>
-        </div>
-        <div className="credits">
-          Designed by <a href="#"> Justincodes.netlify.com</a>
+        <div className="foot">
+          <div className="copyright">
+            &copy;
+            <strong>2023 My Orders Ltd.</strong>
+          </div>
+          <div className="credits">
+            Designed by <a href="#"> Justincodes.netlify.com</a>
+          </div>
+
+          <div className="privacy-policy">
+            <Link href="/privacy-policy">Privacy Policy</Link>
+          </div>
         </div>
       </div>
     </footer>

@@ -13,7 +13,6 @@ import type { Metadata } from "next";
 import { Playfair_Display } from "next/font/google";
 import "./globals.css";
 import React from "react";
-// import { ChakraProvider } from "@chakra-ui/react";
 import TopBar from "./components/TopBar";
 import Header from "./components/Header";
 import BackToTopBtn from "./components/BackToTopBtn";
@@ -41,12 +40,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={playfair.className}>
-        <Toaster position="bottom-right" toastOptions={{ duration: 3000 }} />
+        <Toaster position="bottom-right" toastOptions={{ duration: 5000 }} />
         <TopBar />
         <Header />
-        {/* <ChakraProvider> */}
+
         {children}
-        {/* </ChakraProvider> */}
+
         <Footer />
         <BackToTopBtn />
       </body>
