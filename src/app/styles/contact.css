@@ -44,33 +44,6 @@
   padding-bottom: 8px;
 }
 
-/* .contact .contact-form .validate {
-  display: none;
-  color: #ea5c5c;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-} */
-
-.contact .contact-form .loading {
-  display: none;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .contact-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid seagreen;
-  border-top-color: #1a1814;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
 .contact .contact-form input,
 .contact .contact-form textarea {
   border-radius: 0;

@@ -177,14 +177,6 @@ export default function Booking() {
             </div>
 
             <div className="col-lg-4 col-md-6 form-group mt-3">
-              {/* <InputBox
-                required
-                type="date"
-                value={data.date}
-                onChange={(e) => setData({ ...data, date: e.target.value })}
-                className="form-control"
-                placeholder="Date"
-              /> */}
               <select
                 required
                 value={data.date}
@@ -217,16 +209,6 @@ export default function Booking() {
             </div>
 
             <div className="col-lg-4 col-md-6 form-group mt-3">
-              {/* <InputBox
-                required
-                type="number"
-                value={data.people}
-                onChange={(e) => setData({ ...data, people: e.target.value })}
-                className="form-control"
-                placeholder="No. of people"
-                maxLength={2}
-                max={10}
-              /> */}
               <select
                 required
                 value={data.people}

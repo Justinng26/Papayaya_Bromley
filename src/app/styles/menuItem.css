@@ -1,5 +1,10 @@
 .menu .menu-item {
-  margin-top: 50px;
+  margin-top: 70px;
+}
+
+.menu .menu-item p {
+  position: absolute;
+  padding-left: 51px;
 }
 
 .menu .menu-img {

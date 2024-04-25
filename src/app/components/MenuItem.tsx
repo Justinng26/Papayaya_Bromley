@@ -14,14 +14,7 @@ export default function MenuItem({
 }) {
   return (
     <div className="col-lg-6 menu-item">
-      {/* <Image
-        width={500}
-        height={300}
-        src={item.preview ?? ""}
-        alt="food item"
-        className="menu-img"
-      /> */}
-      <p>insert image</p>
+      <p>{item.id}.</p>
       <div className="menu-content">
         <Link href={`/menu/${item.id}`}>{item.name}</Link>
         <span>£{item.price}</span>

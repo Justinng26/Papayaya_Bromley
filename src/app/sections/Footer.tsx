@@ -83,7 +83,6 @@ export default function Footer() {
                   <Image
                     width={175}
                     height={150}
-                    // src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1545004800"
                     alt="Download on the App Store"
                     src={appStoreBadge}
                   />
@@ -95,7 +94,6 @@ export default function Footer() {
                     height={150}
                     className="google-play-badge"
                     alt="Get it on Google Play"
-                    // src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
                     src={googlePlayBadge}
                   />
                 </a>

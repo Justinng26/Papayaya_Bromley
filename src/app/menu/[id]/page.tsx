@@ -1,5 +1,5 @@
 import Breadcrumb from "@/app/components/Breadcrumb";
-// import Image from "next/image";
+import Image from "next/image";
 
 async function getFoodData(id: string) {
   const res = await fetch(`http://localhost:3000/api/menu/${id}`);
@@ -19,13 +19,13 @@ export default async function MenuCard({ params }: { params: { id: string } }) {
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
-              {/* <Image
+              <Image
                 src={food.preview}
                 alt="food item"
                 height={500}
                 width={500}
                 className="img-fluid"
-              /> */}
+              />
               <p>Insert Image</p>
             </div>
 
