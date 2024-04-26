@@ -303,6 +303,7 @@ export const menu = [
     price: "17.50",
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "starters",
+    allergy: "Nut",
     description: `Serves 2.`,
   },
   {

@@ -76,7 +76,8 @@ export default function PrivacyPolicy() {
             </li>
             <li>
               You can opt-out of marketing at any time by contacting our online
-              privacy team at info@my-orders.com.
+              privacy team at:{" "}
+              <a href="info@my-orders.com">info@my-orders.com</a>
             </li>
             <li>
               We may use personal and profile data to tailor your experience on
@@ -113,9 +114,10 @@ export default function PrivacyPolicy() {
               ensure that we always keep your personal data rights in high
               regard and take account of these rights. You have the right to
               object to this processing if you wish and if you wish to do so
-              please contact us at info@my-orders.com. Please bear in mind that
-              if you object this may affect out ability to carry out the tasks
-              above for your benefit.{" "}
+              please contact us at{" "}
+              <a href="mailto:info@my-orders.com">info@my-orders.com</a>
+              Please bear in mind that if you object this may affect out ability
+              to carry out the tasks above for your benefit.{" "}
             </li>
           </ul>
           {/* Part 3 */}
@@ -172,7 +174,10 @@ export default function PrivacyPolicy() {
             </li>
           </ul>
 
-          <p>To get in touch email: info@my-orders.com</p>
+          <p>
+            To get in touch email:{" "}
+            <a href="mailto:info@my-orders.com">info@my-orders.com</a>
+          </p>
           <p>You may be asked for ID to confirm your identity.</p>
 
           {/* Part 5 */}
@@ -188,8 +193,15 @@ export default function PrivacyPolicy() {
           </p>
 
           <p>
-            For further information on cookies please refer to
-            www.youronlinechoices.com/uk.your-ad-choices
+            For further information on cookies please refer to{" "}
+            <a
+              href="https://www.youronlinechoices.com/uk/your-ad-choices"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              www.youronlinechoices.com/uk/your-ad-choices
+            </a>
+            .
           </p>
           <p>
             This site includes instructions on how to accept or reject cookies
@@ -214,7 +226,7 @@ export default function PrivacyPolicy() {
           </p>
           <p>
             For question or concerns relating to privacy, please contact us by
-            email at: info@my-orders.com.
+            email at: <a href="mailto:info@my-orders.com">info@my-orders.com</a>
           </p>
 
           {/* refund */}

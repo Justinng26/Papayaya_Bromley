@@ -26,10 +26,10 @@ export default function Footer() {
                   Bromley, BR1 1LE
                   <br />
                   <br />
-                  <strong>Phone:</strong>
+                  <strong>Phone: </strong>
                   +44 1234 5678 90
                   <br />
-                  <strong>Email:</strong>
+                  <strong>Email: </strong>
                   info@example.com
                   <br />
                 </p>

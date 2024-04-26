@@ -19,14 +19,17 @@ export default async function MenuCard({ params }: { params: { id: string } }) {
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
-              <Image
-                src={food.preview}
-                alt="food item"
-                height={500}
-                width={500}
-                className="img-fluid"
-              />
-              <p>Insert Image</p>
+              {food.preview ? (
+                <Image
+                  src={food.preview}
+                  alt="food item"
+                  height={500}
+                  width={500}
+                  className="img-fluid"
+                />
+              ) : (
+                <p>Image coming soon</p>
+              )}
             </div>
 
             <div className="col-lg">
@@ -55,7 +58,7 @@ export default async function MenuCard({ params }: { params: { id: string } }) {
 
               {food.allergy && (
                 <h4>
-                  <i>Allergy Information:{food.allergy}</i>
+                  <i>Allergy Information: {food.allergy}</i>
                 </h4>
               )}
 
@@ -66,7 +69,7 @@ export default async function MenuCard({ params }: { params: { id: string } }) {
               )}
 
               {food.description && (
-                <p className="m5-5">Description: - {food.description}</p>
+                <p className="m5-5">Description: {food.description}</p>
               )}
             </div>
           </div>
