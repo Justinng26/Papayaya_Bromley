@@ -62,11 +62,11 @@ export default async function MenuCard({ params }: { params: { id: string } }) {
                 </h4>
               )}
 
-              {food.quantity && (
+              {/* {food.quantity && (
                 <h4>
                   <i>Quantity: {food.quantity}</i>
                 </h4>
-              )}
+              )} */}
 
               {food.description && (
                 <p className="m5-5">Description: {food.description}</p>

@@ -141,6 +141,10 @@
   text-decoration-color: seagreen;
 }
 
+#footer .privacy-policy:hover {
+  text-decoration-color: white;
+}
+
 #footer .credits a {
   color: seagreen;
 }
