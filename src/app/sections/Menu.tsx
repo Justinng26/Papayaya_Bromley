@@ -98,6 +98,14 @@ export default function Menu() {
           )}
         </div>
 
+        {/* download PDF */}
+
+        <div>
+          <a href="/public/PapayayaMenu.pdf" download>
+            <button className="bi bi-download">Download the Menu </button>
+          </a>
+        </div>
+
         {/* Left arrow */}
         <div className="pagination">
           {currentPage > 1 && (

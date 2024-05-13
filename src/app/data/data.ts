@@ -557,8 +557,68 @@ export const menu = [
     description: `Tender breaded chicken marinated in teriyaki sauce with bean sprout. Served with Jasmine Rice.`,
   },
 
-  // Side dishes
+  // curry dishes
+  // Curry Dishes
+  {
+    id: 45,
+    name: "Thai Green Curry",
+    price: "-",
+    preview: "/assets/images/papayaya/GreenCurry.jpg",
+    category: "curry-dishes",
+    allergy: "Fish, Crustaceans",
+    options: [
+      { name: "Vegetable", price: "10.50" },
+      { name: "Chicken,", price: 11.95 },
+      { name: "Beef", price: "11.95" },
+      { name: "Prawn", price: 12.95 },
+    ],
+    description: `Aromatic Green curry with coconut milk, Thai aubergine, sweet basil, bamboo shoot and lime leaves. Served with Jasmine Rice.`,
+  },
+  {
+    id: 46,
+    name: "Thai Red Curry",
+    price: "-", // price varies
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "curry-dishes",
+    allergy: "Fish, Crustaceans",
+    options: [
+      { name: "Vegetable", price: "10.50" },
+      { name: "Chicken,", price: 11.95 },
+      { name: "Beef", price: "11.95" },
+      { name: "Prawn", price: 12.95 },
+      { name: "Roast Duck", price: 12.95 },
+    ],
+    description: `Aromatic red curry with coconut milk, tomatoes, bamboo shoot, lime leaves and fish sauce. Served with Jasmine Rice.`,
+  },
+  {
+    id: 47,
+    name: "Malaysian Beef Rendang",
+    price: 11.95,
+    preview: "/assets/images/papayaya/BeefRendang.jpg",
+    category: "curry-dishes",
+    allergy: "Celery, Soy",
+    description: `Slow simmered with roasted coconut, galangal, lemongrass and chilli. Served with Jasmine Rice.`,
+  },
+  {
+    id: 48,
+    name: "Malaysian Chicken Curry",
+    price: 11.95,
+    // preview: "/assets/images/menu/lobster-roll.jpg",
+    category: "curry-dishes",
+    allergy: "Celery, Soy",
+    description: `Slow simmered with roasted coconut, galangal, lemongrass, chilli and curry leaves. Served with Jasmine Rice.`,
+  },
+  {
+    id: 49,
+    name: "Japanese Katsu Curry",
+    price: 11.95,
+    preview: "/assets/images/papayaya/ChKatsuCurry.jpg",
+    category: "curry-dishes",
+    allergy: "Soy, Gluten, Celery, Mustard",
+    description: `Deep fried chicken fillet in breadcrumbs served with Japanese curry sauce. Served with Jasmine Rice.`,
+  },
 
+  // side dishes
   {
     id: 50,
     name: "Thai Jasmine rice",
@@ -623,66 +683,6 @@ export const menu = [
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "side-dishes",
     allergy: "Egg",
-  },
-
-  // Curry Dishes
-  {
-    id: 45,
-    name: "Thai Green Curry",
-    price: "-",
-    preview: "/assets/images/papayaya/GreenCurry.jpg",
-    category: "curry-dishes",
-    allergy: "Fish, Crustaceans",
-    options: [
-      { name: "Vegetable", price: "10.50" },
-      { name: "Chicken,", price: 11.95 },
-      { name: "Beef", price: "11.95" },
-      { name: "Prawn", price: 12.95 },
-    ],
-    description: `Aromatic Green curry with coconut milk, Thai aubergine, sweet basil, bamboo shoot and lime leaves. Served with Jasmine Rice.`,
-  },
-  {
-    id: 46,
-    name: "Thai Red Curry",
-    price: "-", // price varies
-    // preview: "/assets/images/menu/lobster-roll.jpg",
-    category: "curry-dishes",
-    allergy: "Fish, Crustaceans",
-    options: [
-      { name: "Vegetable", price: "10.50" },
-      { name: "Chicken,", price: 11.95 },
-      { name: "Beef", price: "11.95" },
-      { name: "Prawn", price: 12.95 },
-      { name: "Roast Duck", price: 12.95 },
-    ],
-    description: `Aromatic red curry with coconut milk, tomatoes, bamboo shoot, lime leaves and fish sauce. Served with Jasmine Rice.`,
-  },
-  {
-    id: 47,
-    name: "Malaysian Beef Rendang",
-    price: 11.95,
-    preview: "/assets/images/papayaya/BeefRendang.jpg",
-    category: "curry-dishes",
-    allergy: "Celery, Soy",
-    description: `Slow simmered with roasted coconut, galangal, lemongrass and chilli. Served with Jasmine Rice.`,
-  },
-  {
-    id: 48,
-    name: "Malaysian Chicken Curry",
-    price: 11.95,
-    // preview: "/assets/images/menu/lobster-roll.jpg",
-    category: "curry-dishes",
-    allergy: "Celery, Soy",
-    description: `Slow simmered with roasted coconut, galangal, lemongrass, chilli and curry leaves. Served with Jasmine Rice.`,
-  },
-  {
-    id: 49,
-    name: "Japanese Katsu Curry",
-    price: 11.95,
-    preview: "/assets/images/papayaya/ChKatsuCurry.jpg",
-    category: "curry-dishes",
-    allergy: "Soy, Gluten, Celery, Mustard",
-    description: `Deep fried chicken fillet in breadcrumbs served with Japanese curry sauce. Served with Jasmine Rice.`,
   },
 
   // Wok fry dishes
