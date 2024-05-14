@@ -98,14 +98,6 @@ export default function Menu() {
           )}
         </div>
 
-        {/* download PDF */}
-
-        <div>
-          <a href="/public/PapayayaMenu.pdf" download>
-            <button className="bi bi-download">Download the Menu </button>
-          </a>
-        </div>
-
         {/* Left arrow */}
         <div className="pagination">
           {currentPage > 1 && (
@@ -122,6 +114,13 @@ export default function Menu() {
               onClick={() => handlePageChange(currentPage + 1)}
             ></button>
           )}
+        </div>
+
+        {/* download PDF */}
+        <div className="download">
+          <a href="/PapayayaMenu.pdf" download>
+            <button className="bi bi-download"> Download the Menu </button>
+          </a>
         </div>
       </div>
     </section>

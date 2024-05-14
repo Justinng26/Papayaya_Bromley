@@ -29,6 +29,26 @@
   margin-right: 0;
 }
 
+.download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.download button {
+  background: seagreen;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.download button:hover {
+  color: #1a1814;
+}
+
 .pagination {
   display: flex;
   align-items: center;
