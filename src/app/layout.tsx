@@ -18,6 +18,7 @@ import Header from "./components/Header";
 import BackToTopBtn from "./components/BackToTopBtn";
 import Footer from "./sections/Footer";
 import { Toaster } from "react-hot-toast";
+import { Head } from "next/document";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -39,6 +40,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossOrigin="anonymous"
+        />
+      </Head>
       <body className={playfair.className}>
         <Toaster position="bottom-right" toastOptions={{ duration: 5000 }} />
         <TopBar />
@@ -49,11 +58,11 @@ export default function RootLayout({
         <Footer />
         <BackToTopBtn />
       </body>
-      <script
+      {/* <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossOrigin="anonymous"
-      ></script>
+      ></script> */}
     </html>
   );
 }
