@@ -18,7 +18,7 @@ import Header from "./components/Header";
 import BackToTopBtn from "./components/BackToTopBtn";
 import Footer from "./sections/Footer";
 import { Toaster } from "react-hot-toast";
-import { Head } from "next/document";
+import Head from "next/head";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
