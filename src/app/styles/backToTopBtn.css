@@ -28,3 +28,11 @@
   visibility: visible;
   opacity: 1;
 }
+
+@media (max-width: 650px) {
+  .back-to-top {
+    visibility: hidden !important;
+    opacity: 0;
+    pointer-events: none;
+  }
+}

@@ -14,9 +14,9 @@ export default function Breadcrumb({ page }: { page: string }) {
     <section className="breadcrumbs">
       <div className="container">
         <div className="d-flex justify-content-between align-items-center">
-          <a onClick={handleGoBack} style={{ cursor: "pointer" }}>
+          {/* <a onClick={handleGoBack} style={{ cursor: "pointer" }}>
             <h2>{page}</h2>
-          </a>
+          </a> */}
 
           <ol>
             <li>

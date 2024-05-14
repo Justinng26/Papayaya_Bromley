@@ -29,14 +29,14 @@
   margin-right: 0;
 }
 
-.download {
+.pdf {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px; /* Adjust the margin as needed */
+  margin-top: 30px; /* Adjust the margin as needed */
 }
 
-.download button {
+.pdf button {
   background: seagreen;
   border: 0;
   padding: 10px 35px;
@@ -45,7 +45,7 @@
   border-radius: 50px;
 }
 
-.download button:hover {
+.pdf button:hover {
   color: #1a1814;
 }
 

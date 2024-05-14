@@ -57,7 +57,7 @@ export default async function MenuCard({ params }: { params: { id: string } }) {
               )}
 
               {food.allergy && (
-                <h4>
+                <h4 style={{ margin: "25px 0" }}>
                   <i>Allergy Information: {food.allergy}</i>
                 </h4>
               )}

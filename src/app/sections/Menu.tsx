@@ -117,7 +117,7 @@ export default function Menu() {
         </div>
 
         {/* download PDF */}
-        <div className="download">
+        <div className="pdf">
           <a href="/PapayayaMenu.pdf" download>
             <button className="bi bi-download"> Download the Menu </button>
           </a>
