@@ -1,3 +1,5 @@
+"use client";
+
 import "../styles/navBar.css";
 import { navs } from "../data/data";
 import { useRouter, usePathname } from "next/navigation";
