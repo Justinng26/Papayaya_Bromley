@@ -9,16 +9,32 @@ import NavBar from "./NavBar";
 export default function Header() {
   const [scroll, setScroll] = useState(0);
 
+  // useEffect(() => {
+  //   window.addEventListener("scroll", () => {
+  //     setScroll(window.scrollY);
+  //   });
+  //   return () => {
+  //     window.removeEventListener("scroll", () => {
+  //       setScroll(window.scrollY);
+  //     });
+  //   };
+  // }, [scroll]);
+
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setScroll(window.scrollY);
-    });
-    return () => {
-      window.removeEventListener("scroll", () => {
+    if (typeof window !== "undefined") {
+      // Check if running on client-side }
+      const handleScroll = () => {
         setScroll(window.scrollY);
-      });
-    };
+      };
+
+      window.addEventListener("scroll", handleScroll);
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
   }, [scroll]);
+
   return (
     <header
       id="header"

@@ -2,20 +2,34 @@
 import { useEffect, useState } from "react";
 import "../styles/topBar.css";
 
-
 export default function TopBar() {
   const [scroll, setScroll] = useState(0);
 
   // this useEffect is for the scroll event. It will update the state of scroll by the window.scrollY. When the component is unmounted, it will remove the event listener because of the return function.
+  // useEffect(() => {
+  //   window.addEventListener("scroll", () => {
+  //     setScroll(window.scrollY);
+  //   });
+  //   return () => {
+  //     window.removeEventListener("scroll", () => {
+  //       setScroll(window.scrollY);
+  //     });
+  //   };
+  // }, [scroll]);
+
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setScroll(window.scrollY);
-    });
-    return () => {
-      window.removeEventListener("scroll", () => {
+    if (typeof window !== "undefined") {
+      // Check if running on client-side
+      const handleScroll = () => {
         setScroll(window.scrollY);
-      });
-    };
+      };
+
+      window.addEventListener("scroll", handleScroll);
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
   }, [scroll]);
 
   return (

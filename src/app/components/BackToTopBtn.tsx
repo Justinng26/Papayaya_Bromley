@@ -6,17 +6,31 @@ import "../styles/backToTopBtn.css";
 export default function BackToTopBtn() {
   const [scroll, setScroll] = useState(0);
 
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setScroll(window.scrollY);
-    });
-    return () => {
-      window.removeEventListener("scroll", () => {
-        setScroll(window.scrollY);
-      });
-    };
-  }, [scroll]);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", () => {
+  //     setScroll(window.scrollY);
+  //   });
+  //   return () => {
+  //     window.removeEventListener("scroll", () => {
+  //       setScroll(window.scrollY);
+  //     });
+  //   };
+  // }, [scroll]);
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      // Check if running on client-side
+      const handleScroll = () => {
+        setScroll(window.scrollY);
+      };
+
+      window.addEventListener("scroll", handleScroll);
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
+  }, [scroll]);
   const backToTop = () => {
     window.scrollTo(0, 0);
   };

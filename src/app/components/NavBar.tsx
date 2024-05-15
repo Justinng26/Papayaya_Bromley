@@ -12,19 +12,29 @@ export default function NavBar() {
   const [scroll, setScroll] = useState(0);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setScroll(window.scrollY);
-    });
-    return () => {
-      window.removeEventListener("scroll", () => {
+    if (typeof window !== "undefined") {
+      // Check if running on client-side}
+      const handleScroll = () => {
         setScroll(window.scrollY);
-      });
-    };
-  }, [scroll]);
+      };
 
-  const handleToggleMenu = () => {
-    setOpen(!open);
-  };
+      window.addEventListener("scroll", handleScroll);
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
+  }, []); // Empty dependency array ensures this effect runs only once after initial render
+  // useEffect(() => {
+  //   window.addEventListener("scroll", () => {
+  //     setScroll(window.scrollY);
+  //   });
+  //   return () => {
+  //     window.removeEventListener("scroll", () => {
+  //       setScroll(window.scrollY);
+  //     });
+  //   };
+  // }, [scroll]);
 
   useEffect(() => {
     const handleNavActive = () => {
@@ -51,6 +61,10 @@ export default function NavBar() {
 
     handleNavActive();
   }, [navList, scroll]);
+
+  const handleToggleMenu = () => {
+    setOpen(!open);
+  };
 
   return (
     <nav

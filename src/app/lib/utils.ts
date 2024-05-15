@@ -29,22 +29,47 @@ export const getErrorMessage = (error: unknown): string => {
   return message;
 };
 
+// export const handleScrollTo = (
+//   section: string,
+//   pathname: string,
+//   router: AppRouterInstance
+// ) => {
+//   const header: HTMLElement = document.querySelector("#header")!;
+//   const offset = header.offsetHeight;
+//   const targetEl: HTMLElement = document.querySelector("#" + section)!;
+
+//   if (pathname === "/") {
+//     const elementPosition = targetEl.offsetTop;
+//     window.scrollTo({
+//       top: elementPosition - offset,
+//       behavior: "smooth",
+//     });
+//   } else {
+//     router.push("/#" + section);
+//   }
+// };
+
 export const handleScrollTo = (
   section: string,
   pathname: string,
   router: AppRouterInstance
 ) => {
-  const header: HTMLElement = document.querySelector("#header")!;
-  const offset = header.offsetHeight;
-  const targetEl: HTMLElement = document.querySelector("#" + section)!;
+  if (typeof window !== "undefined") {
+    // Check if running on client-side
+    const header: HTMLElement | null = document.querySelector("#header");
+    const offset = header ? header.offsetHeight : 0;
+    const targetEl: HTMLElement | null = document.querySelector("#" + section);
 
-  if (pathname === "/") {
-    const elementPosition = targetEl.offsetTop;
-    window.scrollTo({
-      top: elementPosition - offset,
-      behavior: "smooth",
-    });
-  } else {
-    router.push("/#" + section);
+    if (targetEl) {
+      if (pathname === "/") {
+        const elementPosition = targetEl.offsetTop;
+        window.scrollTo({
+          top: elementPosition - offset,
+          behavior: "smooth",
+        });
+      } else {
+        router.push("/#" + section);
+      }
+    }
   }
 };
