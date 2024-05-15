@@ -1,3 +1,4 @@
+// import Image from "next/image";
 import "../styles/testimonialCard.css";
 import { BsStarFill, BsStar } from "react-icons/bs";
 
@@ -25,7 +26,6 @@ export default function TestimonialCard({
     }
     return stars;
   };
-  // ...
 
   return (
     <div className="testimonial-card">
@@ -36,7 +36,13 @@ export default function TestimonialCard({
         <i className="stars">{renderStars(item.rating)}</i>
       </p>
 
-      <img src={item.avatar} className="testimonials-img" alt="profile photo" />
+      <img
+        src={item.avatar}
+        className="testimonials-img"
+        alt="profile photo"
+        // width={90}
+        // height={90}
+      />
       <h3>{item.client}</h3>
       <h4>{item.position}</h4>
     </div>

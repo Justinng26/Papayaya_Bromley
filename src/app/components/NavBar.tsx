@@ -26,8 +26,6 @@ export default function NavBar() {
     setOpen(!open);
   };
 
-  
-
   const handleNavActive = () => {
     const position = scroll + 200;
     // nav add and remove active class
