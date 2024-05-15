@@ -26,31 +26,31 @@ export default function NavBar() {
     setOpen(!open);
   };
 
-  const handleNavActive = () => {
-    const position = scroll + 200;
-    // nav add and remove active class
-    setNavList(
-      navList.map((nav) => {
-        nav.active = false;
-        const targetSection: HTMLElement = document.querySelector(
-          "#" + nav.target
-        )!;
-
-        if (
-          targetSection &&
-          position >= targetSection.offsetTop &&
-          position <= targetSection.offsetTop + targetSection.offsetHeight
-        ) {
-          nav.active = true;
-        }
-        return nav;
-      })
-    );
-  };
-
   useEffect(() => {
+    const handleNavActive = () => {
+      const position = scroll + 200;
+      // nav add and remove active class
+      setNavList(
+        navList.map((nav) => {
+          nav.active = false;
+          const targetSection: HTMLElement = document.querySelector(
+            "#" + nav.target
+          )!;
+
+          if (
+            targetSection &&
+            position >= targetSection.offsetTop &&
+            position <= targetSection.offsetTop + targetSection.offsetHeight
+          ) {
+            nav.active = true;
+          }
+          return nav;
+        })
+      );
+    };
+
     handleNavActive();
-  }, [scroll]);
+  }, [navList, scroll]);
 
   return (
     <nav
