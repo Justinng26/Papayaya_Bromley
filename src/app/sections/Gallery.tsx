@@ -3,7 +3,12 @@
 import React, { useState, useEffect } from "react";
 import SectionTitle from "../components/SectionTitle";
 import Preloader from "../components/Preloader";
-import GalleryCard from "../components/GalleryCard";
+// import GalleryCard from "../components/GalleryCard";
+import dynamic from "next/dynamic";
+
+const DynamicGalleryCard = dynamic(() => import("../components/GalleryCard"), {
+  ssr: false,
+});
 
 export default function Gallery() {
   const [images, setImages] = useState<any | []>([]);
@@ -34,7 +39,7 @@ export default function Gallery() {
             <Preloader />
           ) : images.length > 0 ? (
             images.map((image: { id: number; image: string }) => (
-              <GalleryCard key={image.id} item={image} />
+              <DynamicGalleryCard key={image.id} item={image} />
             ))
           ) : (
             <Preloader />

@@ -7,9 +7,12 @@ import "../styles/hero.css";
 
 export default function Hero() {
   useEffect(() => {
-    Glightbox({
-      selector: ".glightbox",
-    });
+    if (typeof window !== "undefined") {
+      // initialiize Glightbox only on client side
+      Glightbox({
+        selector: ".glightbox",
+      });
+    }
   }, []);
 
   return (

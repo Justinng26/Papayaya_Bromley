@@ -4,7 +4,12 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import "../styles/header.css";
 import AppBtn from "./AppBtn";
-import NavBar from "./NavBar";
+// import NavBar from "./NavBar";
+import dynamic from "next/dynamic";
+
+const DynamicNavBar = dynamic(() => import("./NavBar"), {
+  ssr: false,
+});
 
 export default function Header() {
   const [scroll, setScroll] = useState(0);
@@ -51,7 +56,7 @@ export default function Header() {
             />
           </a>
         </h1>
-        <NavBar />
+        <DynamicNavBar />
         <AppBtn name="order online" />
       </div>
     </header>

@@ -14,11 +14,20 @@ import { Playfair_Display } from "next/font/google";
 import "./globals.css";
 import React from "react";
 import TopBar from "./components/TopBar";
-import Header from "./components/Header";
-import BackToTopBtn from "./components/BackToTopBtn";
+// import Header from "./components/Header";
+// import BackToTopBtn from "./components/BackToTopBtn";
 import Footer from "./sections/Footer";
 import { Toaster } from "react-hot-toast";
 import Head from "next/head";
+import dynamic from "next/dynamic";
+
+const DynamicHeader = dynamic(() => import("./components/Header"), {
+  ssr: false,
+});
+
+const DynamicBackToTopBtn = dynamic(() => import("./components/BackToTopBtn"), {
+  ssr: false,
+});
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -51,12 +60,12 @@ export default function RootLayout({
       <body className={playfair.className}>
         <Toaster position="bottom-right" toastOptions={{ duration: 5000 }} />
         <TopBar />
-        <Header />
+        <DynamicHeader />
 
         {children}
 
         <Footer />
-        <BackToTopBtn />
+        <DynamicBackToTopBtn />
       </body>
       {/* <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

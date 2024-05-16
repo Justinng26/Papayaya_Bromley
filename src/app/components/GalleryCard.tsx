@@ -13,9 +13,11 @@ export default function GalleryCard({
   };
 }) {
   useEffect(() => {
-    Glightbox({
-      selector: ".gallery-lightbox",
-    });
+    if (typeof window === "undefined") {
+      Glightbox({
+        selector: ".gallery-lightbox",
+      });
+    }
   }, []);
   return (
     <div className="col-lg-3 col-md-4 col-sm-6">
