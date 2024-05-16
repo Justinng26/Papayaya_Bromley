@@ -62,7 +62,7 @@ export default function NavBar() {
     };
 
     handleNavActive();
-  }, [navList, scroll]);
+  }, [scroll]);
 
   const handleToggleMenu = () => {
     setOpen(!open);
