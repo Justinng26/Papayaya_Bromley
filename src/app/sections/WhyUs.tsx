@@ -1,9 +1,10 @@
+import { BASE_API_URL } from "../utils/constants";
 import SectionTitle from "../components/SectionTitle";
 import WhyUsCard from "../components/WhyUsCard";
 import "../styles/whyUs.css";
 
 async function getWhyUsData() {
-  const res = await fetch("http://localhost:3000/api/whyus");
+  const res = await fetch(`${BASE_API_URL}/api/whyus`);
   return res.json();
 }
 

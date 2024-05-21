@@ -1,5 +1,6 @@
 "use client";
 
+import { BASE_API_URL } from "../utils/constants";
 import { useState, FormEvent } from "react";
 import SectionTitle from "../components/SectionTitle";
 import InputBox from "../components/InputBox";
@@ -19,7 +20,7 @@ export default function Booking() {
 
   const sendBooking = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const response = await fetch("../api/booking", {
+    const response = await fetch(`${BASE_API_URL}/api/booking`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

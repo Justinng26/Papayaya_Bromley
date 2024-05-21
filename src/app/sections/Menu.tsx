@@ -1,5 +1,6 @@
 "use client";
 
+import { BASE_API_URL } from "../utils/constants";
 import { useState, useEffect } from "react";
 import { filters } from "../data/data";
 import "../styles/menu.css";
@@ -13,7 +14,7 @@ export default function Menu() {
   const [currentPage, setCurrentPage] = useState(1);
 
   const getMenuData = () => {
-    fetch("http://localhost:3000/api/menu")
+    fetch(`${BASE_API_URL}/api/menu`)
       .then((res) => res.json())
       .then((menu) => setData(menu))
       .catch((err) => console.log(err.message));
