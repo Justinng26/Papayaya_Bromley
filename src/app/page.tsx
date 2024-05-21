@@ -1,7 +1,7 @@
 import About from "./sections/About";
 // import Hero from "./sections/Hero";
 import Menu from "./sections/Menu";
-import Testimonials from "./sections/Testimonials";
+// import Testimonials from "./sections/Testimonials";
 import Gallery from "./sections/Gallery";
 import OpeningHours from "./sections/OpeningHours";
 import Contact from "./sections/Contact";
@@ -22,7 +22,7 @@ export default function Home() {
         <Gallery />
         <Booking />
         <OpeningHours />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Contact />
       </main>
     </>

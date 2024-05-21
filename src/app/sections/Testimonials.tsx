@@ -33,7 +33,7 @@ export default function Testimonials() {
 
         <div data-aos="fade-up" data-aos-delay="100">
           <Swiper
-            slidesPerView={1}
+            slidesPerView={"auto"}
             speed={600}
             autoplay={{
               delay: 10000,
@@ -53,7 +53,7 @@ export default function Testimonials() {
               },
 
               1200: {
-                slidesPerView: 1,
+                slidesPerView: 2,
                 spaceBetween: 20,
               },
             }}
