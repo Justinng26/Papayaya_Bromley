@@ -15,10 +15,12 @@ export default function Gallery() {
   const [images, setImages] = useState<any | []>([]);
 
   const getGalleryData = () => {
-    // console.log(`Fetching gallery data from: ${BASE_API_URL}/api/gallery`);
+    console.log(`Fetching gallery data from: ${BASE_API_URL}/api/gallery`);
     fetch(`${BASE_API_URL}/api/gallery`)
       .then((res) => res.json())
+
       .then((data) => setImages(data))
+
       .catch((e) => console.log(e.massage));
   };
 

@@ -14,6 +14,7 @@ export default function Menu() {
   const [currentPage, setCurrentPage] = useState(1);
 
   const getMenuData = () => {
+    console.log(`Fetching menu data from :${BASE_API_URL}/api/menu`);
     fetch(`${BASE_API_URL}/api/menu`)
       .then((res) => res.json())
       .then((menu) => setData(menu))

@@ -20,6 +20,7 @@ export default function Booking() {
 
   const sendBooking = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    console.log(`fetching booking data from: ${BASE_API_URL}/api/booking`);
     const response = await fetch(`${BASE_API_URL}/api/booking`, {
       method: "POST",
       headers: {
