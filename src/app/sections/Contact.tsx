@@ -1,6 +1,6 @@
 "use client";
 
-import { BASE_API_URL } from "../utils/constants";
+// import { BASE_API_URL } from "../utils/constants";
 import SectionTitle from "../components/SectionTitle";
 import { useState, FormEvent } from "react";
 import InputBox from "../components/InputBox";
@@ -18,7 +18,7 @@ export default function Contact() {
 
   const sendEmail = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const response = await fetch(`${BASE_API_URL}/api/contact`, {
+    const response = await fetch("../api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
