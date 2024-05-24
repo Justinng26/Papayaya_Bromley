@@ -5,7 +5,7 @@ import SectionTitle from "../components/SectionTitle";
 import Preloader from "../components/Preloader";
 // import GalleryCard from "../components/GalleryCard";
 import dynamic from "next/dynamic";
-import { BASE_API_URL } from "../utils/constants";
+// import { BASE_API_URL } from "../utils/constants";
 
 const DynamicGalleryCard = dynamic(() => import("../components/GalleryCard"), {
   ssr: false,
@@ -15,13 +15,12 @@ export default function Gallery() {
   const [images, setImages] = useState<any | []>([]);
 
   const getGalleryData = () => {
-    console.log(`Fetching gallery data from: ${BASE_API_URL}/api/gallery`);
-    fetch(`${BASE_API_URL}/api/gallery`)
+    fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/gallery`)
       .then((res) => res.json())
 
       .then((data) => setImages(data))
 
-      .catch((e) => console.log(e.massage));
+      .catch((e) => console.log(e.message));
   };
 
   useEffect(() => {

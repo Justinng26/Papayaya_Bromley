@@ -12,6 +12,9 @@ export default async function MenuCard({ params }: { params: { id: string } }) {
 
   const food = await getFoodData(id);
 
+  // if (!BASE_API_URL) {
+  //   return null;
+  // }
   return (
     <main id="main">
       <Breadcrumb page="Menu" />
