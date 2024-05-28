@@ -13,7 +13,7 @@ export default function Testimonials() {
   const [slides, setSlides] = useState([]);
 
   const getTestimonialData = () => {
-    fetch("../api/testimonials")
+    fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/api/testimonials`)
       .then((response) => response.json())
       .then((data) => setSlides(data))
       .catch((e) => console.log(e.message));
