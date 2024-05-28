@@ -5,7 +5,6 @@ import SectionTitle from "../components/SectionTitle";
 import InputBox from "../components/InputBox";
 import { toast } from "react-hot-toast";
 import "../styles/booking.css";
-import { BASE_API_URL } from "../utils/constants";
 
 export default function Booking() {
   const [data, setData] = useState({
@@ -20,7 +19,7 @@ export default function Booking() {
 
   const sendBooking = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(`fetching booking data from: ${BASE_API_URL}/api/booking`);
+
     const response = await fetch("../api/booking", {
       method: "POST",
       headers: {

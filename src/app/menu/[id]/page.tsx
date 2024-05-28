@@ -1,9 +1,11 @@
 import Breadcrumb from "@/app/components/Breadcrumb";
-import { BASE_API_URL } from "@/app/utils/constants";
+
 import Image from "next/image";
 
 async function getFoodData(id: string) {
-  const res = await fetch(`${BASE_API_URL}/api/menu/${id}`);
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_API_URL}/api/menu/${id}`
+  );
   return res.json();
 }
 
