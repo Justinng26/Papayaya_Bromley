@@ -1,6 +1,5 @@
 "use client";
 
-import { BASE_API_URL } from "../utils/constants";
 import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -14,7 +13,7 @@ export default function Testimonials() {
   const [slides, setSlides] = useState([]);
 
   const getTestimonialData = () => {
-    fetch(`${BASE_API_URL}/api/testimonials`)
+    fetch("../api/testimonials")
       .then((response) => response.json())
       .then((data) => setSlides(data))
       .catch((e) => console.log(e.message));
