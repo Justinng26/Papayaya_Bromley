@@ -1,6 +1,6 @@
 import { useRouter, usePathname } from "next/navigation";
 import "../styles/heroBtn.css";
-import { handleScrollTo } from "../lib/utils";
+import { handleScrollTo } from "../../../lib/utils";
 
 export default function HeroBtn({
   name,
@@ -11,8 +11,6 @@ export default function HeroBtn({
 }) {
   const router = useRouter();
   const pathname = usePathname();
-
-  
 
   return (
     <a

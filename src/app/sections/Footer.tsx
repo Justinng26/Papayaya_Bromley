@@ -3,7 +3,7 @@
 import { footer } from "../data/data";
 import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
-import { handleScrollTo } from "../lib/utils";
+import { handleScrollTo } from "../../../lib/utils";
 import googlePlayBadge from "../../../public/assets/images/google-play-badge.png";
 import appStoreBadge from "../../../public/assets/images/app-store-badge.png";
 import Image from "next/image";

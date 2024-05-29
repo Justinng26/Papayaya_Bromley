@@ -4,7 +4,7 @@ import "../styles/navBar.css";
 import { navs } from "../data/data";
 import { useRouter, usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
-import { handleScrollTo } from "../lib/utils";
+import { handleScrollTo } from "../../../lib/utils";
 
 export default function NavBar() {
   const pathname = usePathname();

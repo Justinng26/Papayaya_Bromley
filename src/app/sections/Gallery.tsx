@@ -5,6 +5,7 @@ import SectionTitle from "../components/SectionTitle";
 import Preloader from "../components/Preloader";
 // import GalleryCard from "../components/GalleryCard";
 import dynamic from "next/dynamic";
+// import { images } from "../../../lib/images"
 
 const DynamicGalleryCard = dynamic(() => import("../components/GalleryCard"), {
   ssr: false,
@@ -46,6 +47,19 @@ export default function Gallery() {
           ) : (
             <Preloader />
           )}
+
+          {/* {!images ? (
+            <Preloader />
+          ) : images.length > 0 ? (
+            images.map((image, index) => (
+            
+              <Image
+                src={image.src}
+                alt={image.alt}
+              />
+            )
+          )
+          )} */}
         </div>
       </div>
     </section>
