@@ -153,7 +153,7 @@ export const menu = [
     price: "6.50",
     preview: "/assets/images/papayaya/VegSpringRoll.jpg",
     category: "starters",
-    allergy: "Vegetarian, Soya, Gluten, Sesame",
+    allergy: "Vegetarian, Soya, Gluten",
     description: `Vermicelli noodles, shredded fungus and mixed vegetables wrapped in pastry. Served with sweet chilli dipping sauce.`,
   },
   {
@@ -249,7 +249,7 @@ export const menu = [
     // preview: "/assets/images/menu/lobster-roll.jpg",
     price: "-", // price varies
     category: "starters",
-    allergy: "Celery, Crustaceans, Fish",
+    allergy: "Crustaceans, Fish",
     options: [
       { name: "Chicken", price: "6.50" },
       { name: "Prawn", price: "6.95" },
@@ -372,7 +372,7 @@ export const menu = [
     price: "-",
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "soup-noodles",
-    allergy: "Crustaceans, Fish, Soy, Milk",
+    allergy: "Crustaceans, Fish, Milk",
     options: [
       { name: "Vegetable", price: "10.95" },
       { name: "Chicken", price: "11.50" },
@@ -499,7 +499,7 @@ export const menu = [
     price: "-",
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "noodles-rice",
-    allergy: "Crustaceans, Soy",
+    allergy: "Crustaceans, Soy, Sesame",
     options: [
       { name: "Vegetable", price: "10.95" },
       { name: "Beef", price: "11.95" },
@@ -541,7 +541,7 @@ export const menu = [
   {
     id: 43,
     name: "Hokkien Mee - Malaysian classic",
-    price: "12.50",
+    price: "12.95",
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "noodles-rice",
     allergy: "Soy, Molluscs, Crustaceans, Gluten, Egg",
@@ -613,7 +613,7 @@ export const menu = [
     price: "12.50",
     preview: "/assets/images/papayaya/ChKatsuCurry.jpg",
     category: "curry-dishes",
-    allergy: "Soy, Gluten, Celery",
+    allergy: "Soy, Gluten, Celery, Mustard",
     description: `Deep fried chicken fillet in breadcrumbs served with Japanese curry sauce. Served with Jasmine Rice.`,
   },
 
@@ -640,7 +640,7 @@ export const menu = [
     price: 3.95,
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "side-dishes",
-    allergy: "Egg",
+    allergy: "Egg, Soy",
   },
   {
     id: "52a",
@@ -648,7 +648,7 @@ export const menu = [
     price: 4.95,
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "side-dishes",
-    allergy: "Egg",
+    allergy: "Egg, Soy",
   },
   {
     id: 53,
@@ -1166,7 +1166,7 @@ export const menu = [
     price: "-",
     preview: "/assets/images/papayaya/VegSpringRoll.jpg",
     category: "kids",
-    allergy: "Soy, Gluten, Vegetarian, Celery",
+    allergy: "Soy, Gluten, Vegetarian",
     description:
       "Choose a starter, a main plus 1 scoop of Vanilla Ice-cream for £9.50",
   },
@@ -1217,7 +1217,7 @@ export const menu = [
     price: "2.00",
     // preview: "/assets/images/menu/lobster-roll.jpg",
     category: "Additional-Topping",
-    allergy: "Soy, Nut",
+    allergy: "Soy, Nut, Mustard",
   },
   {
     id: "SM3",
