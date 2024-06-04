@@ -12,7 +12,7 @@ import sixth from "../public/assets/images/gallery/Papayaya - High Street_hero_2
 
 import seventh from "../public/assets/images/gallery/laksa-prawn-cracker.jpeg";
 
-import eighth from "../public/assets/images/gallery/Flora_tea.jpeg";
+import eighth from "../public/assets/images/gallery/Papayaya_banner.jpeg";
 
 export const images = [
   { src: first, alt: "Green curry" },
@@ -22,5 +22,5 @@ export const images = [
   { src: fifth, alt: "Singapore noodle" },
   { src: sixth, alt: "Papayaya - High Street_hero_2" },
   { src: seventh, alt: "laksa-prawn-cracker" },
-  { src: eighth, alt: "Flora_tea" },
+  { src: eighth, alt: "Papayaya_banner" },
 ];

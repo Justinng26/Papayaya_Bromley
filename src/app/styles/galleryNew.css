@@ -13,4 +13,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: visible;
+}
+
+.gallery .swiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 724px) {
+  .gallery .swiper {
+    overflow: hidden;
+  }
 }

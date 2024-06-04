@@ -35,10 +35,10 @@ export default function GalleryNew() {
                     alt={image.alt}
                     width={600}
                     height={400}
-                    style={{
-                      display: "block",
-                      objectFit: "cover",
-                    }}
+                    // style={{
+                    //   display: "block",
+                    //   objectFit: "cover",
+                    // }}
                   />
                 </div>
               </SwiperSlide>

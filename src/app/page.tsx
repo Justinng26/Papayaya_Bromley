@@ -6,7 +6,7 @@ import Menu from "./sections/Menu";
 import OpeningHours from "./sections/OpeningHours";
 import Contact from "./sections/Contact";
 import Booking from "./sections/Booking";
-// import GalleryNew from "./sections/GalleryNew";
+import GalleryNew from "./sections/GalleryNew";
 import dynamic from "next/dynamic";
 
 const DynamicHero = dynamic(() => import("./sections/Hero"), {
@@ -23,7 +23,7 @@ export default function Home() {
       <main id="main">
         <About />
         <Menu />
-        {/* <GalleryNew /> */}
+        <GalleryNew />
         {/* <Gallery /> */}
         <Booking />
         <OpeningHours />
