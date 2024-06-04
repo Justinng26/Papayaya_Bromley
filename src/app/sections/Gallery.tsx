@@ -47,19 +47,6 @@ export default function Gallery() {
           ) : (
             <Preloader />
           )}
-
-          {/* {!images ? (
-            <Preloader />
-          ) : images.length > 0 ? (
-            images.map((image, index) => (
-            
-              <Image
-                src={image.src}
-                alt={image.alt}
-              />
-            )
-          )
-          )} */}
         </div>
       </div>
     </section>
