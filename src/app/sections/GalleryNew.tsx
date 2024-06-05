@@ -4,7 +4,7 @@ import Image from "next/image";
 import SectionTitle from "../components/SectionTitle";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import { images } from "../../../lib/images";
 import "../styles/galleryNew.css";
 
@@ -25,20 +25,26 @@ export default function GalleryNew() {
           <Swiper
             navigation={true}
             pagination={{ type: "fraction" }}
-            modules={[Navigation, Pagination]}
+            autoplay={{
+              delay: 10000,
+              disableOnInteraction: false,
+            }}
+            modules={[Navigation, Autoplay, Pagination]}
+            loop={true}
           >
             {images.map((image, index) => (
               <SwiperSlide key={index}>
-                <div className="swiper">
+                <div className="swiper-slide">
                   <Image
                     src={image.src}
                     alt={image.alt}
                     width={600}
                     height={400}
-                    // style={{
-                    //   display: "block",
-                    //   objectFit: "cover",
-                    // }}
+                    style={{
+                      maxWidth: "100%",
+                      height: "400px",
+                      opacity: "0.8",
+                    }}
                   />
                 </div>
               </SwiperSlide>

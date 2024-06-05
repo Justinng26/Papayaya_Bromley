@@ -1,28 +1,22 @@
+#gallery {
+  background-color: #000;
+}
+
 .gallery .gallery-slider {
   width: 100%;
-  height: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.gallery .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.gallery .swiper {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: visible !important;
-}
-
-.gallery .swiper img {
-  max-width: 100%;
+.gallery .swiper-slide img {
   object-fit: cover;
   border-radius: 5%;
-}
-
-@media (max-width: 1326px) {
-  .gallery .swiper {
-    overflow: hidden;
-  }
 }
