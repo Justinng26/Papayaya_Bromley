@@ -1,5 +1,27 @@
-#gallery {
-  background-color: #000;
+.gallery {
+  background: url("../../../public//assets/images/Thailand-Night-Market-HERO.webp")
+    center center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 50px 0;
+}
+
+.gallery::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.gallery .section-title h2 {
+  color: #fff;
+}
+
+.gallery .container {
+  position: relative;
 }
 
 .gallery .gallery-slider {
@@ -18,5 +40,11 @@
 
 .gallery .swiper-slide img {
   object-fit: cover;
-  border-radius: 5%;
+  border-radius: 3%;
+}
+
+@media (min-width: 1024px) {
+  #gallery {
+    background-attachment: fixed;
+  }
 }

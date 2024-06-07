@@ -39,7 +39,7 @@ export default function GalleryNew() {
                     src={image.src}
                     alt={image.alt}
                     width={600}
-                    height={400}
+                    loading="lazy"
                     style={{
                       maxWidth: "100%",
                       height: "400px",

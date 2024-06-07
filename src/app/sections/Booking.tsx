@@ -217,11 +217,16 @@ export default function Booking() {
                 className="form-control"
               >
                 <option value="">No. of People</option>
-                {[...Array(13)].map((_, num) => (
-                  <option key={num} value={num}>
-                    {num}
-                  </option>
-                ))}
+
+                {/* Generating options from 1 to 12 */}
+                {[...Array(12)].map((_, index) => {
+                  const num = index + 1; // Start from 1 instead of 0
+                  return (
+                    <option key={num} value={num}>
+                      {num}
+                    </option>
+                  );
+                })}
               </select>
             </div>
           </div>

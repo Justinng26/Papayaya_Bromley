@@ -7,6 +7,7 @@ import SectionTitle from "../components/SectionTitle";
 import MenuItem from "../components/MenuItem";
 import Preloader from "../components/Preloader";
 const itemsPerPage = 8;
+
 export default function Menu() {
   const [data, setData] = useState([]);
   const [items, setItems] = useState([]);
