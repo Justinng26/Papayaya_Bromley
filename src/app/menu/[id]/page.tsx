@@ -32,6 +32,7 @@ export default async function MenuCard({ params }: { params: { id: string } }) {
                   height={500}
                   width={500}
                   className="img-fluid"
+                  style={{ borderRadius: "3%" }}
                 />
               ) : (
                 <p>Image coming soon</p>

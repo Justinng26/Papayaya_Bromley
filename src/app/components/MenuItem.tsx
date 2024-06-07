@@ -1,5 +1,4 @@
 import "../styles/menuItem.css";
-// import Image from "next/image";
 import Link from "next/link";
 
 export default function MenuItem({
@@ -8,7 +7,6 @@ export default function MenuItem({
   item: {
     id: string | number;
     name: string;
-    preview?: string;
     price: number | string;
   };
 }) {
