@@ -3,7 +3,7 @@
 import SectionTitle from "../components/SectionTitle";
 import MenuCard from "../components/MenuCard";
 import { menuLinks } from "../../../lib/menuLinks";
-import "../styles/menu.css";
+import "../styles/menuPDF.css";
 
 export default function MenuPDF() {
   return (
@@ -14,7 +14,7 @@ export default function MenuPDF() {
         <div className="row" data-aos="fade-up" data-aos-delay="200">
           {menuLinks.map((link) => (
             <div
-              className="col-md-4 mb-4 d-flex justify-content-center"
+              className="col-lg-4 col-md-6 mb-4 d-flex justify-content-center"
               key={link.id}
             >
               <MenuCard name={link.name} url={link.url} />

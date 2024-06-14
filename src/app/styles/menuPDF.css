@@ -1,0 +1,19 @@
+.pdf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px; /* Adjust the margin as needed */
+}
+
+.pdf button {
+  background: seagreen;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.pdf button:hover {
+  color: #1a1814;
+}

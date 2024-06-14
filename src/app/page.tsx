@@ -28,7 +28,7 @@ export default function Home() {
 
         <Booking />
         <OpeningHours />
-
+        {/* <Testimonials /> */}
         <Contact />
       </main>
     </>
