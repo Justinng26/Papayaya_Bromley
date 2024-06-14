@@ -1,0 +1,43 @@
+.menu-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 110px;
+  background-color: #1a1814;
+  border-radius: 1px;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 200;
+  font-family: "Open Sans", serif;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.menu-card:hover {
+  background-color: seagreen;
+  transform: translateY(-5px);
+}
+
+.menu-card:active {
+  background-color: #ced4da;
+  transform: translateY(0);
+}
+
+.menu-card strong {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-card strong::before,
+.menu-card strong::after {
+  content: "•";
+  margin: 0 8px; /* Adjust spacing as needed */
+}

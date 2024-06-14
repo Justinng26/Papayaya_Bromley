@@ -3,7 +3,8 @@ import About from "./sections/About";
 // import Menu from "./sections/Menu";
 // import Testimonials from "./sections/Testimonials";
 // import Gallery from "./sections/Gallery";
-import Menu from "./sections/MenuNew";
+// import Menu from "./sections/MenuNew";
+import MenuPDF from "./sections/MenuPDF";
 import OpeningHours from "./sections/OpeningHours";
 import Contact from "./sections/Contact";
 import Booking from "./sections/Booking";
@@ -21,12 +22,13 @@ export default function Home() {
       <main id="main">
         <About />
         {/* <Menu /> */}
-        <Menu />
+        {/* <Menu /> */}
+        <MenuPDF />
         <GalleryNew />
-        {/* <Gallery /> */}
+
         <Booking />
         <OpeningHours />
-        {/* <Testimonials /> */}
+
         <Contact />
       </main>
     </>

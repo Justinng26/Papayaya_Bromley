@@ -27,7 +27,6 @@ interface MenuItemType {
 const itemsPerPage = 8;
 
 export default function Menu() {
-  //   const [data, setData] = useState([]);
   const [items, setItems] = useState<MenuItemType[]>(menu);
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -41,11 +40,18 @@ export default function Menu() {
   };
 
   // Set the active filter
+  // const handleFilterActive = (id: number) => {
+  //   filters.map((filter) => {
+  //     filter.active = false;
+  //     if (filter.id === id) filter.active = true;
+  //     return filter; // Add return statement here
+  //   });
+  // };
+
+  // Set the active filter
   const handleFilterActive = (id: number) => {
-    filters.map((filter) => {
-      filter.active = false;
-      if (filter.id === id) filter.active = true;
-      return filter; // Add return statement here
+    filters.forEach((filter) => {
+      filter.active = filter.id === id;
     });
   };
 
@@ -140,6 +146,15 @@ export default function Menu() {
         <div className="pdf">
           <a href="/PapayayaMenu.pdf" download>
             <button className="bi bi-download"> Download the Menu </button>
+          </a>
+        </div>
+
+        <div className="pdf">
+          <a
+            href="https://drive.google.com/file/d/1EH6l2L0n3NiVD9LQ6UzHDEZGRbPIdLOy/view?usp=drive_link"
+            target="_blank"
+          >
+            <button className="bi bi-download"> Starters </button>
           </a>
         </div>
       </div>
