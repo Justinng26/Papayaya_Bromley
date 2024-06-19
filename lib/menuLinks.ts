@@ -12,12 +12,12 @@ export const menuLinks = [
   {
     id: 3,
     name: "Noodles and Rice",
-    url: "https://drive.google.com/file/d/1Sj3MpL-gfJK9SjBkKeWAH8KeTYcYuWMU/view?usp=drive_link",
+    url: "https://drive.google.com/file/d/1USxE9HAFGbF8UmjMMc-zDC9kGciJ3Gzg/view?usp=drive_link",
   },
   {
     id: 4,
     name: "Curry Dishes / Side Dishes",
-    url: "https://drive.google.com/file/d/12g60ig96H91_UaMYZBxX6i3VVccWmziv/view?usp=drive_link",
+    url: "https://drive.google.com/file/d/1_d-U3dkzqFm7feZLLE9QJQbqM2nsUFZs/view?usp=drive_link",
   },
   {
     id: 5,

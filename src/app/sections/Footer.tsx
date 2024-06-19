@@ -30,7 +30,7 @@ export default function Footer() {
                   +44 1234 5678 90
                   <br />
                   <strong>Email: </strong>
-                  info@example.com
+                  info@papayaya.com
                   <br />
                 </p>
               </div>
