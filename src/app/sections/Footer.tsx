@@ -27,7 +27,7 @@ export default function Footer() {
                   <br />
                   <br />
                   <strong>Phone: </strong>
-                  +44 1234 5678 90
+                  0208 466 8886
                   <br />
                   <strong>Email: </strong>
                   info@papayaya.com
