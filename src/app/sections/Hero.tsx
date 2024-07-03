@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import Glightbox from "glightbox";
 import HeroBtn from "../components/HeroBtn";
+// import AppBtn from "../components/AppBtn";
 import "../styles/hero.css";
 
 export default function Hero() {
@@ -31,6 +32,8 @@ export default function Hero() {
 
             <div className="btns">
               <HeroBtn name="contact" target="contact" />
+
+              {/* <AppBtn name="order online" /> */}
               <HeroBtn name="book a table" target="book-a-table" />
             </div>
           </div>
