@@ -155,12 +155,13 @@
 
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 28px;
+    font-size: 33px;
     line-height: 36px;
   }
   #hero h2 {
-    font-size: 18px;
+    font-size: 21px;
     line-height: 24px;
+    padding: 16px 0;
   }
 }
 
